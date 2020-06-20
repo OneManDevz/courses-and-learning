@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "expo": "^38.0.0",
-    "moment": "^2.22.2",
+    "moment": "^2.27.0",
     "native-base": "^2.13.12",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
