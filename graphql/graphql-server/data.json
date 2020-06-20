@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "411455",
+      "name": "NejakyJohnny",
+      "address": {
+        "street": "RandomStreet",
+        "streetNumber": 12
+      },
+      "posts": [
+        {
+          "title": "ITA GraphQL",
+          "content": "Andrej (ne)vie o com hovori ...."
+        }
+      ],
+      "followers": [
+        {
+          "id": "123131",
+          "name": "Zblesk"
+        },
+        {
+          "id": "21121",
+          "name": "Detektiv Fixka"
+        },
+        {
+          "id": "87441",
+          "name": "Amantius"
+        }
+      ]
+    },
+    {
+      "id": "87441",
+      "name": "Minas",
+      "address": {
+        "street": "NieTakRandomStreet"
+      },
+      "posts": [
+        {
+          "title": "ITA NonNullable",
+          "content": "Mina (ne)vie o com hovori ...."
+        }
+      ],
+      "followers": [
+        {
+          "id": "123131",
+          "name": "Zblesk"
+        },
+        {
+          "id": "87441",
+          "name": "NejakyJohnny"
+        }
+      ]
+    },
+    {
+      "id": "123131",
+      "name": "Zblesk",
+      "address": {
+        "street": "NeviemDavatRandomUlice"
+      },
+      "posts": [
+        {
+          "title": "Tutor",
+          "content": "Chodiaca encyklopedia"
+        }
+      ],
+      "followers": []
+    },
+    {
+      "name": "Jaj",
+      "id": "1utHrYH"
+    },
+    {
+      "name": "Jaaaaj",
+      "id": "kFLqJto"
+    },
+    {
+      "name": "Jaaaaj",
+      "id": "FDmoYyd"
+    },
+    {
+      "name": "Jaaaaj",
+      "id": "nj_iUHI"
+    },
+    {
+      "name": "Jaasadaaaj",
+      "id": "TJ2ZPNp"
+    },
+    {
+      "name": "Jaasadaaaj",
+      "address": {
+        "street": "Testujem Novu query",
+        "streetNumber": 420
+      },
+      "id": "jzv2Rcu"
+    }
+  ]
+}

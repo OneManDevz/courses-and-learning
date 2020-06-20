@@ -1,0 +1,9 @@
+mutation{
+  addUser(name: "Jaasadaaaj", address: { street: "Testujem Novu query", streetNumber: 420}){
+    name
+    address {
+      street
+      streetNumber
+    }
+  }
+}

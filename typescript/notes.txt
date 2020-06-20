@@ -1,0 +1,53 @@
+Typescript (basic info):
+    -   open source
+    -   typed superset of js
+    -   compiles down to plain js (for most browsers)
+    -   just extended js
+    -   optional static typing and type inference
+    -   IDE support -> intelisense, description of error
+    -   main programming language of Angular
+
+Installation:
+    -   nodejs
+    -   Typescript -> npm install -g typescript
+
+Commands:
+    -   tsc <filename.ts>       ->  build ts into js
+    -   node <filename.js>      ->  runs js
+    -   tsc <filename> --watch  ->  will watch for changes, and recompile js as soon as <filename.ts> changes
+
+Variable declarations:
+    -   let                     ->  does not need initial value
+    -   const                   ->  must have value
+
+Varieble types:
+    -   boolean                 ->  let variable = true; let variable:boolean = true;
+    -   string                  ->  let name: string = "string"
+    -   number                  ->  let total: number = 0;
+    -   NULL                    ->  subtype
+    -   undefined               ->  subtype
+    -   array                   ->  varType [] / Array<varType>
+    -   tuple                   ->  array of multiple types
+    -   enum                    ->  set of numeric values
+    -   any                     ->  not sure what type will be used
+    -   unknown                 ->  any value is assignable
+    -   varType1 | varType2     ->  multiple variable types
+
+Functions:
+    function <funtionName>(<parameter1>: <variableType>, <parameter2>: <variableType>): <returnType> {
+        return <what to return>
+    }
+    -   optional parameter      ->  <parameter>?                ->  function add(number1: number, number2?: number): number{...};
+    -   default parameter       ->  parameter with a set value  ->  function add(number1: number, number2: number = 10): number{...};
+
+Interface:
+    -   properties of Interface is optional ->  used in forms (registration forms) -> variable?
+
+Class
+    -   
+
+Access modifiers
+    -   keywords that set accessibility of properties and methods in a Class
+    -   public                  ->  default
+    -   private                 ->  cannot be accessed from outside of its containing class
+    -   protected               ->  can access property from within derived class, not accessible from outside
