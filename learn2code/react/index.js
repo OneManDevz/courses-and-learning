@@ -20,7 +20,7 @@ class App extends React.Component {
   }
 
   handleSubmit = (e) => {
-    if(e.key === 'Enter'){
+    if(e.key === 'Enter' && this.state.newDescr && this.state.newTitle){
       this.setState((state) => { //always current values of state
         //moved to setState function to get current values of this.state
         const newShow = {
