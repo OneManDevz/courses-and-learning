@@ -1,6 +1,8 @@
 class App extends React.Component {
   constructor(props) {
     super(props)
+
+    this.input = React.createRef()
     
     this.state =  {
       newTitle: '',
@@ -34,7 +36,18 @@ class App extends React.Component {
           shows: [ ...state.shows, newShow]
         }
       })
+
+      this.resetForm()
     }
+  }
+
+  resetForm = () => {
+    this.setState({
+      newTitle: '',
+      newDescr: ''
+    })
+
+    this.input.current.focus()
   }
 
   handleRating = show => (e) => {
@@ -77,7 +90,7 @@ class App extends React.Component {
     return <div>
       <ul>{this.listOfShows()}</ul>
       <form className="add-new" onKeyPress={this.handleSubmit}>
-        <input type="text" onChange={this.handleChange} value={newTitle} title="newTitle" />
+        <input type="text" onChange={this.handleChange} value={newTitle} title="newTitle" ref={this.input} autoFocus />
         <input type="text" onChange={this.handleChange} value={newDescr} title="newDescr" />
       </form>
 
