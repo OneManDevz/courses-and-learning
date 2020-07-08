@@ -37,15 +37,26 @@ class App extends React.Component {
     }
   }
 
+  handleRating = show => (e) => {
+    const rating = +e.target.value //conver to number
+
+    this.setState((state) => { 
+      return { 
+        shows: state.shows.map(item => 
+          item === show ? { ...show, rating } : item  
+        )
+     }})
+  }
+
   listOfShows = () => {
     return this.state.shows.map(show => (
       <li key={show.id} className="dude">
         <a className="ctrl">x</a>
-        <article className={show.rating < 7 ? 'faded' : show.rating > 8 ? 'gold' : '' }>
+        <article className={show.rating < 7 ? 'faded' : show.rating > 9 ? 'gold' : '' }>
           {show.title}
           <span>{show.descr}</span>
         </article>
-        <input className="ctrl" type="number" value={show.rating} />
+        <input className="ctrl" type="number" value={show.rating} onChange={this.handleRating(show)} />
       </li>
     ))
   }
