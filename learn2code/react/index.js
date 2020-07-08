@@ -3,7 +3,8 @@ class App extends React.Component {
     super(props)
     
     this.state =  {
-      show: 'Somali',
+      newTitle: '',
+      newDescr: '',
       shows: [
         {id: 1, title: 'Somali', descr: 'Lost human', nOfEps: 12},
         {id: 2, title: 'Rick and Morty', descr: 'You know this show', nOfEps: 20},
@@ -12,21 +13,27 @@ class App extends React.Component {
     }
   }
 
-  onChange = (e) => {
+  handleChangeTitle = (e) => {
     this.setState({
-      show: e.target.value
+      newTitle: e.target.value
     })
   }
 
-  onSubmit = (e) => {
+  handleChangeDescr = (e) => {
+    this.setState({
+      newDescr: e.target.value
+    })
+  }
+
+  handleSubmit = (e) => {
     e.preventDefault();
     
     this.setState((state) => { //always current values of state
       //moved to setState function to get current values of this.state
       const newShow = {
         id: Math.max( ...state.shows.map(s => s.id)) + 1 ,
-        title: state.show,
-        descr: state.show,
+        title: state.newTitle,
+        descr: state.newDescr,
         nOfEps: 1
       }
 
@@ -38,24 +45,30 @@ class App extends React.Component {
 
   listOfShows = () => {
     return this.state.shows.map(show => (
-      <li key={show.id}>
-        {show.title}
-        
+      <li key={show.id} className="dude">
+        <a className="ctrl">x</a>
+        <article className="">
+          {show.title}
+          <span>{show.descr}</span>
+        </article>
+        <input className="ctrl" type="number" value={show.nOfEps} />
       </li>
     ))
   }
 
   render() {
-    const { show } = this.state
+    const { newDescr, newTitle } = this.state
 
     return <div>
       <ul>{this.listOfShows()}</ul>
-      {/*or <ul>{shows.map(show => {return <li key={show.id}>{show.title}</li>})}</ul>*/}
-      <form className="add-new" onSubmit={this.onSubmit}>
-        <input type="text" onChange={this.onChange} value={show} />
+      <form className="add-new" onKeyPress={this.handleSubmit}>
+        <input type="text" onChange={this.handleChangeTitle} value={newTitle} />
+        <input type="text" onChange={this.handleChangeDescr} value={newDescr} />
       </form>
 
-      <p className="preview">{show}</p>
+      <p className="preview">{newTitle}<br />
+        <small>{newDescr}</small>
+      </p>
     </div>
   }
 }
