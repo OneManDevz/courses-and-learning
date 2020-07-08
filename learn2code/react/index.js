@@ -19,12 +19,11 @@ class App extends React.Component {
   }
 
   render() {
-    const { show } = this.state
-    const shows = this.state.shows.map(show => (<li key={show.id}>{show.title}</li>))
+    const { show, shows } = this.state
+
     return <div>
-      <ul>
-        {shows}
-      </ul>
+      <ul>{shows.map(show => (<li key={show.id}>{show.title}</li>))}</ul>
+      {/*or <ul>{shows.map(show => {return <li key={show.id}>{show.title}</li>})}</ul>*/}
       <form className="add-new">
         <input type="text" onChange={this.onChange} value={show} />
       </form>
