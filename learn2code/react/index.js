@@ -26,21 +26,21 @@ class App extends React.Component {
   }
 
   handleSubmit = (e) => {
-    e.preventDefault();
-    
-    this.setState((state) => { //always current values of state
-      //moved to setState function to get current values of this.state
-      const newShow = {
-        id: Math.max( ...state.shows.map(s => s.id)) + 1 ,
-        title: state.newTitle,
-        descr: state.newDescr,
-        nOfEps: 1
-      }
-
-      return { 
-        shows: [ ...state.shows, newShow]
-      }
-    })
+    if(e.key === 'Enter'){
+      this.setState((state) => { //always current values of state
+        //moved to setState function to get current values of this.state
+        const newShow = {
+          id: Math.max( ...state.shows.map(s => s.id)) + 1 ,
+          title: state.newTitle,
+          descr: state.newDescr,
+          nOfEps: 1
+        }
+  
+        return {
+          shows: [ ...state.shows, newShow]
+        }
+      })
+    }
   }
 
   listOfShows = () => {
