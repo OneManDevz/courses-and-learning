@@ -13,15 +13,9 @@ class App extends React.Component {
     }
   }
 
-  handleChangeTitle = (e) => {
+  handleChange = (e) => {
     this.setState({
-      newTitle: e.target.value
-    })
-  }
-
-  handleChangeDescr = (e) => {
-    this.setState({
-      newDescr: e.target.value
+      [e.target.title]: e.target.value
     })
   }
 
@@ -62,8 +56,8 @@ class App extends React.Component {
     return <div>
       <ul>{this.listOfShows()}</ul>
       <form className="add-new" onKeyPress={this.handleSubmit}>
-        <input type="text" onChange={this.handleChangeTitle} value={newTitle} />
-        <input type="text" onChange={this.handleChangeDescr} value={newDescr} />
+        <input type="text" onChange={this.handleChange} value={newTitle} title="newTitle" />
+        <input type="text" onChange={this.handleChange} value={newDescr} title="newDescr" />
       </form>
 
       <p className="preview">{newTitle}<br />
