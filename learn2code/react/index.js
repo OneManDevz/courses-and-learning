@@ -7,12 +7,16 @@ class App extends React.Component {
     this.state =  {
       newTitle: '',
       newDescr: '',
-      shows: [
-        {id: 1, title: 'Somali', descr: 'Lost human', rating: 8},
-        {id: 2, title: 'Rick and Morty', descr: 'You know this show', rating: 10},
-        {id: 3, title: 'Mr. Robot', descr: 'Sample description. Hacker', rating: 6}
-      ]
+      shows: []
     }
+  }
+
+  componentDidMount = () => {
+    fetch('https://gist.githubusercontent.com/OneManDevz/b0783d0e6fc86de77d77263a6bf85a35/raw/69781d61030c867927fb63c1c5404950c0599192/test-fetch.json')
+    .then(data => data.json())
+    .then(response => {
+      this.setState({ shows: response})
+    })
   }
 
   handleChange = (e) => {
@@ -29,7 +33,7 @@ class App extends React.Component {
           id: Math.max( ...state.shows.map(s => s.id)) + 1 ,
           title: state.newTitle,
           descr: state.newDescr,
-          rating: 1
+          numParam: 1
         }
   
         return {
@@ -51,12 +55,12 @@ class App extends React.Component {
   }
 
   handleRating = show => (e) => {
-    const rating = +e.target.value //conver to number
+    const numParam = +e.target.value //conver to number
 
     this.setState((state) => { 
       return { 
         shows: state.shows.map(item => 
-          item === show ? { ...show, rating } : item  
+          item === show ? { ...show, numParam } : item  
         )
       }
     })
@@ -75,11 +79,11 @@ class App extends React.Component {
     return this.state.shows.map(show => (
       <li key={show.id} className="dude">
         <a className="ctrl" onClick={ () => this.removeShow(show)}>x</a>
-        <article className={show.rating < 7 ? 'faded' : show.rating > 9 ? 'gold' : '' }>
+        <article className={show.numParam < 15 ? 'faded' : show.numParam > 68 ? 'gold' : '' }>
           {show.title}
           <span>{show.descr}</span>
         </article>
-        <input className="ctrl" type="number" value={show.rating} onChange={this.handleRating(show)} />
+        <input className="ctrl" type="number" value={show.numParam} onChange={this.handleRating(show)} />
       </li>
     ))
   }
