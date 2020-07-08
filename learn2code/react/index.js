@@ -6,9 +6,9 @@ class App extends React.Component {
       newTitle: '',
       newDescr: '',
       shows: [
-        {id: 1, title: 'Somali', descr: 'Lost human', nOfEps: 12},
-        {id: 2, title: 'Rick and Morty', descr: 'You know this show', nOfEps: 20},
-        {id: 3, title: 'Mr. Robot', descr: 'Sample description. Hacker', nOfEps: 11}
+        {id: 1, title: 'Somali', descr: 'Lost human', rating: 8},
+        {id: 2, title: 'Rick and Morty', descr: 'You know this show', rating: 10},
+        {id: 3, title: 'Mr. Robot', descr: 'Sample description. Hacker', rating: 6}
       ]
     }
   }
@@ -27,7 +27,7 @@ class App extends React.Component {
           id: Math.max( ...state.shows.map(s => s.id)) + 1 ,
           title: state.newTitle,
           descr: state.newDescr,
-          nOfEps: 1
+          rating: 1
         }
   
         return {
@@ -41,11 +41,11 @@ class App extends React.Component {
     return this.state.shows.map(show => (
       <li key={show.id} className="dude">
         <a className="ctrl">x</a>
-        <article className="">
+        <article className={show.rating < 7 ? 'faded' : show.rating > 8 ? 'gold' : '' }>
           {show.title}
           <span>{show.descr}</span>
         </article>
-        <input className="ctrl" type="number" value={show.nOfEps} />
+        <input className="ctrl" type="number" value={show.rating} />
       </li>
     ))
   }
