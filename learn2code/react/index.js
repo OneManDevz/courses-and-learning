@@ -18,13 +18,39 @@ class App extends React.Component {
     })
   }
 
+  onSubmit = (e) => {
+    e.preventDefault();
+    
+    const newShow = {
+      id: this.state.shows[this.state.shows.length - 1].id + 1,
+      title: this.state.show,
+      descr: this.state.show,
+      nOfEps: 1
+    }
+
+    this.setState((state) => { //state obsahuje aktualny stav state-u
+      return { 
+        shows: [ ...state.shows, newShow]
+      }
+    })
+  }
+
+  listOfShows = () => {
+    return this.state.shows.map(show => (
+      <li key={show.id}>
+        {show.title}
+        
+      </li>
+    ))
+  }
+
   render() {
-    const { show, shows } = this.state
+    const { show } = this.state
 
     return <div>
-      <ul>{shows.map(show => (<li key={show.id}>{show.title}</li>))}</ul>
+      <ul>{this.listOfShows()}</ul>
       {/*or <ul>{shows.map(show => {return <li key={show.id}>{show.title}</li>})}</ul>*/}
-      <form className="add-new">
+      <form className="add-new" onSubmit={this.onSubmit}>
         <input type="text" onChange={this.onChange} value={show} />
       </form>
 
