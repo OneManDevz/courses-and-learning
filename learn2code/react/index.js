@@ -21,14 +21,15 @@ class App extends React.Component {
   onSubmit = (e) => {
     e.preventDefault();
     
-    const newShow = {
-      id: this.state.shows[this.state.shows.length - 1].id + 1,
-      title: this.state.show,
-      descr: this.state.show,
-      nOfEps: 1
-    }
+    this.setState((state) => { //always current values of state
+      //moved to setState function to get current values of this.state
+      const newShow = {
+        id: Math.max( ...state.shows.map(s => s.id)) + 1 ,
+        title: state.show,
+        descr: state.show,
+        nOfEps: 1
+      }
 
-    this.setState((state) => { //state obsahuje aktualny stav state-u
       return { 
         shows: [ ...state.shows, newShow]
       }

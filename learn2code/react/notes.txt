@@ -9,5 +9,5 @@ this.setState({
 
 })
 
-Object might work - use when creating completely new state value
+Object might work - use when creating completely new state value - (in big apps can contain old values - not updated)
 Function will work - always current state - use when you need old value (and that value to be current and correct value) to create new value (update state)
