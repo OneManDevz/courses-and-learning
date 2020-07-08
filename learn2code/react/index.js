@@ -45,13 +45,23 @@ class App extends React.Component {
         shows: state.shows.map(item => 
           item === show ? { ...show, rating } : item  
         )
-     }})
+      }
+    })
+  }
+
+  removeShow = show => {
+    console.log('App -> show', show)
+    this.setState((state) => { 
+      return { 
+        shows: state.shows.filter(item => item !== show)
+      }
+    })
   }
 
   listOfShows = () => {
     return this.state.shows.map(show => (
       <li key={show.id} className="dude">
-        <a className="ctrl">x</a>
+        <a className="ctrl" onClick={ () => this.removeShow(show)}>x</a>
         <article className={show.rating < 7 ? 'faded' : show.rating > 9 ? 'gold' : '' }>
           {show.title}
           <span>{show.descr}</span>
