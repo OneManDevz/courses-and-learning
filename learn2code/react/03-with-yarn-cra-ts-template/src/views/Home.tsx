@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './Home.scss'
 import logo from '../assets/logo.svg'
 
 const Home: React.FC = () => {
 	const [title] = useState('React Title!')
-
-	useEffect(() => {
-		document.title = title
-	})
 
 	return (
 		<div className="home">

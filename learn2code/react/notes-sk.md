@@ -583,7 +583,7 @@ tsrafce
 
 useState
 
-1. Práca so `state` vo functional komponentoch
+1. Práca so `state` vo function komponentoch
 
 useEffect
 
@@ -592,13 +592,45 @@ useEffect
 3. fetch, ajax, api
 4. setTimeout
 
+Pravidlá
+
+1. Vždy v najvrchnejšom leveli funkcie
+   1. Nesmie byť v podmienke
+   2. Nesmie byť v cykle
+2. Môžu byť volané len vo function komponentoch
+
 **HOOKS + AJAX**
 :: [https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c](https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c)
 
 **TYPESCRIPT + HOOKS**
 :: [https://www.carlrippon.com/typed-usestate-with-typescript](https://www.carlrippon.com/typed-usestate-with-typescript)
 
+### 24 Tunes podstránka v TS s HOOKS a cyklom a formom
 
+prebehneme cez pole songov
+
+```javascript
+{songs.map(song => (
+    <li key={song.id}>{JSON.stringify(song)}</li>
+))}
+```
+
+nový song do poľa
+
+```javascript
+const newSong = {
+    id: Math.max(...songs.map(s => s.id)) + 1,
+    artist: query,
+    name: query
+}
+setSongs([...songs, newSong])
+```
+
+**REACT FORMS (EVENT TYPES)**
+:: [https://www.carlrippon.com/building-super-simple-react-form-component-typescript-basics/](https://www.carlrippon.com/building-super-simple-react-form-component-typescript-basics/)
+:: [https://www.carlrippon.com/building-a-react-form-component-with-typescript-validation/](https://www.carlrippon.com/building-a-react-form-component-with-typescript-validation/)
+:: [https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c](https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c)
+:: [https://stackoverflow.com/questions/42081549/typescript-react-event-types](https://stackoverflow.com/questions/42081549/typescript-react-event-types)
 
 
 
