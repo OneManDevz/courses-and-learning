@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Song } from '../../types'
 import { truncate } from 'lodash-es'
 import './TunesSong.scss'
@@ -13,10 +13,6 @@ const TunesSong: React.FC<Props> = (props: Props) => {
 	const songify = (song: Song): string => {
 		return shorten(song.artist + ' - ' + song.title, 100)
 	}
-
-	useEffect(() => {
-		alert('Daco, brekeke')
-	}, [])
 
 	const shorten = (text: string, len = 55): string => {
 		return truncate(text, { length: len })

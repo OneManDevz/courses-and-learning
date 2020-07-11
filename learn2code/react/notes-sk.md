@@ -931,7 +931,19 @@ Zavolá funkciu len ak sa zmení hodnota v argumente
 **FETCH DATA WITH REACT HOOKS**
 :: [https://www.robinwieruch.de/react-hooks-fetch-data](https://www.robinwieruch.de/react-hooks-fetch-data)
 
+### 37 KONIEC reactu, ANIMÁCIE, Vue vs React rekap
 
+**pozri si**
+:: [https://youtu.be/FtgUSUHnzLI](https://youtu.be/FtgUSUHnzLI)
+
+**aj takéto**
+:: [https://youtu.be/FhuFWoN1nb0](https://youtu.be/FhuFWoN1nb0)
+
+**a ešte**
+:: [https://youtu.be/l5JMw5SWLJE](https://youtu.be/l5JMw5SWLJE)
+
+**ale aj**
+:: [https://youtu.be/Fz5s2_VDyOQ](https://youtu.be/Fz5s2_VDyOQ)
 
 
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { Song } from '../../types'
 import './TunesList.scss'
 import TunesSong from './TunesSong'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 interface Props {
 	songs: Song[]
@@ -10,13 +11,15 @@ interface Props {
 const TunesList: React.FC<Props> = (props: Props) => {
 	const { songs } = props
 	return (
-		<ul className="tunes-list">
+		<TransitionGroup className="tunes-list" component="ul">
 			{songs.map((song) => (
-				<li key={song.id}>
-					<TunesSong song={song} />
-				</li>
+				<CSSTransition key={song.id} timeout={200} classNames="song">
+					<li>
+						<TunesSong song={song} />
+					</li>
+				</CSSTransition>
 			))}
-		</ul>
+		</TransitionGroup>
 	)
 }
 
