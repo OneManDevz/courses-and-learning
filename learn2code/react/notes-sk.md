@@ -910,7 +910,10 @@ potom do nej pošleš objekt **extractData(obj)** a vráti sa ti nový objekt, v
 **types in object destructuring?**
 :: [https://stackoverflow.com/questions/39672807/types-in-object-destructuring](https://stackoverflow.com/questions/39672807/types-in-object-destructuring) (aj keď vždy byť skeptický k stackoverflow)
 
+### 35 FORMÁTOVANIE výpisov, `<TunesSong>` komponent
 
+**Chumbawamba**
+:: [https://en.wikipedia.org/wiki/The_Boy_Bands_Have_Won](https://en.wikipedia.org/wiki/The_Boy_Bands_Have_Won)
 
 
 

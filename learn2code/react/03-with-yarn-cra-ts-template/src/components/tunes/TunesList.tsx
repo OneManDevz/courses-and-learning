@@ -1,6 +1,7 @@
 import React from 'react'
 import { Song } from '../../types'
 import './TunesList.scss'
+import TunesSong from './TunesSong'
 
 interface Props {
 	songs: Song[]
@@ -11,7 +12,9 @@ const TunesList: React.FC<Props> = (props: Props) => {
 	return (
 		<ul className="tunes-list">
 			{songs.map((song) => (
-				<li key={song.id}> {JSON.stringify(song)}</li>
+				<li key={song.id}>
+					<TunesSong song={song} />
+				</li>
 			))}
 		</ul>
 	)
