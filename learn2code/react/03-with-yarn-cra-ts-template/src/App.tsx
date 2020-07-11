@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<header>
-				<TheNavigation />
+				<TheNavigation brand="main" />
 			</header>
 			<main className="content">
 				<Switch>
@@ -19,6 +19,9 @@ function App() {
 					<Route path="/about" component={About} />
 				</Switch>
 			</main>
+			<footer>
+				<TheNavigation />
+			</footer>
 		</div>
 	)
 }

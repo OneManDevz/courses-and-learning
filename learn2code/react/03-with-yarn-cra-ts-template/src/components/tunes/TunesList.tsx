@@ -11,9 +11,9 @@ const TunesList: React.FC<Props> = () => {
 
 	return (
 		<ul className="tunes-list">
-			{songs.map((song) => (
+			{/* {songs.map((song) => (
 				<li key={song.id}> {JSON.stringify(song)}</li>
-			))}
+			))} */}
 		</ul>
 	)
 }

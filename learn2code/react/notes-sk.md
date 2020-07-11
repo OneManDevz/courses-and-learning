@@ -632,7 +632,79 @@ setSongs([...songs, newSong])
 :: [https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c](https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c)
 :: [https://stackoverflow.com/questions/42081549/typescript-react-event-types](https://stackoverflow.com/questions/42081549/typescript-react-event-types)
 
+### 25 RODIČ a jeho DETI, sub-komponenty
 
+navyrábaš nové súbory
 
+```react
+/components/tunes/TunesSearchForm.tsx
+/components/tunes/TunesList.tsx
+```
 
+v rodičovi naimportuješ
 
+```react
+[ Tunes.tsx ]
+  
+// children
+import TunesSearchForm from '../components/tunes/TunesSearchForm'
+import TunesList from '../components/tunes/TunesList'
+```
+
+používaš
+
+```react
+<article className="tunes">
+    <h1>Tunes</h1>
+    <TunesSearchForm />
+    <TunesList />
+</article>
+```
+
+### 26 KOMUNIKÁCIA komponentov, TOP-DOWN DATA FLOW (teória)
+
+**TOP-DOWN DATA FLOW**
+:: [https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down](https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down)
+
+V reacte môže stav tiecť **iba smerom dole.**
+
+**RODIČ** eviduje stav. **MÔŽE** ho poslať decku dole cez **PROPS**.
+Dieťa môže rodiča **POPROSIŤ**, či by nezmenil svoj stav. Cez **CALLBACK FUNKCIE**.
+
+Keď oba **SKOMBINUJEŠ**, vieš dosiahnuť komunikáciu medzi súrodencami.
+
+**REACT COMPONENT COMMUNICATION**
+:: [https://reactjs.org/docs/components-and-props.HTML](https://reactjs.org/docs/components-and-props.HTML)
+:: [https://reactjs.org/docs/composition-vs-inheritance.html](https://reactjs.org/docs/composition-vs-inheritance.html)
+:: [https://www.javascriptstuff.com/component-communication](https://www.javascriptstuff.com/component-communication/)
+:: [https://blog.bitsrc.io/react-communication-between-components-c0cfccfa996a](https://blog.bitsrc.io/react-communication-between-components-c0cfccfa996a)
+:: [https://react.tips/how-reactjs-components-communicate](https://react.tips/how-reactjs-components-communicate/)
+:: [https://medium.com/better-programming/angular-vs-react-component-communication-91af1a144295](https://medium.com/better-programming/angular-vs-react-component-communication-91af1a144295)
+:: [https://passionfordev.com/react-communication-between-parent-and-child](https://passionfordev.com/react-communication-between-parent-and-child/)
+
+### 27 KOMUNIKÁCIA cez PROPS od rodiča k decku
+
+v **rodičovi**
+
+```react
+<TheNavigation brand="main" />
+<TheNavigation brand="secondary" />
+```
+
+v **TheNavigation.tsx**
+
+```react
+// props
+interface Props {
+    brand: String
+}
+   
+React.FC<Props> = (props) => {
+    // dobry napad je rozlozit objekt props na konstanty 
+    const { brand, howMany } = props
+}
+```
+
+**THINKING IN REACT, STATE vs. PROPS**
+:: [https://reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
+:: [https://lucybain.com/blog/2016/react-state-vs-pros](https://lucybain.com/blog/2016/react-state-vs-pros)
