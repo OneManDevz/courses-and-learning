@@ -878,6 +878,22 @@ yarn add --dev @types/lodash-es
 :: [https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 :: [https://blog.quicktype.io/quicktype-extensions](https://blog.quicktype.io/quicktype-extensions/)
 
+Z networku vytiahni response (json). 
+
+![00-network-tab](https://user-images.githubusercontent.com/42937562/87232654-f896f000-c3c0-11ea-8dd1-ebbdd594ea72.png)
+
+Z neho jeden item a ten pastni do nového súboru.
+
+![01-paste-to-code](https://user-images.githubusercontent.com/42937562/87232655-f92f8680-c3c0-11ea-9453-59ab64bb747a.png)
+
+Zavolaj `Open quick type for JSON`
+
+![02-open-quicktype-for-json](https://user-images.githubusercontent.com/42937562/87232656-f9c81d00-c3c0-11ea-8362-3fd4f4941404.png)
+
+Výsledok
+
+![04-result](https://user-images.githubusercontent.com/42937562/87232657-f9c81d00-c3c0-11ea-864f-30b44767e52b.png)
+
 sprav si funkciu, ktorá z objektu **vyextrahuje** len chcené vlastnosti
 
 ```typescript
