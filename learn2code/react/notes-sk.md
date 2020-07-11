@@ -51,7 +51,7 @@ Tieto veci si stiahni a nainštaluj.
 :: https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
 :: https://www.vuemastery.com/vue-cheat-sheet/
 
-**REACT (ES7 React/Redux/GraphQL/React-Native snippets)
+**REACT (ES7 React/Redux/GraphQL/React-Native snippets)**
 
 :: https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
 
@@ -78,31 +78,31 @@ komponent cez Classy (neskôr ukážem cez funkcie)
 
 ```javascript
 class App extends React.Component {
-  
+
     this.state = {
         dude: 'Marceline the Vampire'
     }
     render() {
         return <div>{this.state.dude} lives!</div>;
     }
-  
+
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 JSX pravidlá
-1) className namiesto class
-2) atribúty sú camelCase (onClick, tabIndex, ...)
+
+1. className namiesto class
+2. atribúty sú camelCase (onClick, tabIndex, ...)
 
 ### 03 Reaktívne appky | najprv vo VUE
 
 Ideme na to. Zhurta. Na čo čakať. Na nič.
-V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu. 
-
+V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu.
 
 Všetky veci, ktoré ukážem, potom v kurze postupne vysvetlím.
-**Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "**Materiály**".
+**Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "**Materiály\*\*".
 
 Sťahuj si ho. A hraj sa s ním. Upravuj môj kód. Meň ho, rob z neho vlastnú stránku. Uč sa podľa videí, ale pokojne kopíruj kusy z môjho kódu. Vylepšuj ho. Hraj sa. Zabávaj sa. Makaj.
 
@@ -112,37 +112,32 @@ Sťahuj si ho. A hraj sa s ním. Upravuj môj kód. Meň ho, rob z neho vlastnú
 **Vue štartér**
 
 ```vue
-const app = new Vue({
-    el: '#app',
-    data: {
-      
-    }
-})
+const app = new Vue({ el: '#app', data: { } })
 ```
 
 ### 04 PODMIENKY a CYKLY v HTML, SYNCHRONIZÁCIA stavu s UI | vue
 
 **Reaktívne frameworky** (Vue, React, Angular)
 
-zo statického HTML kódu spravia živú šablónu. HTML kódu pridáš pravidláva vždy keď príde zmena, automaticky na ňu **zareaguje**. 
+zo statického HTML kódu spravia živú šablónu. HTML kódu pridáš pravidláva vždy keď príde zmena, automaticky na ňu **zareaguje**.
 
-Nemusíšvfurt selectovať elementy zo stránky, prependovať, appendovať, vyrábať nové prázdne, naťahovať sa s classListom... ty napíšeš HTML kód. A povieš mu *"buď tu iba ak platí toto"* a Vue sa postará o zvyšok. 
+Nemusíšvfurt selectovať elementy zo stránky, prependovať, appendovať, vyrábať nové prázdne, naťahovať sa s classListom... ty napíšeš HTML kód. A povieš mu _"buď tu iba ak platí toto"_ a Vue sa postará o zvyšok.
 
 Môžemvtu vypisovať, kým sa mi prsty neodlomia a neodkráčajú v proteste do západu slnka, ale veď pozri video. Vieš jak sa hovorí - lepšie raz youtube, ako tisíckrát čítať. Aj keď toto neni youtube. (Je to vimeo.)
 
 ### 05 JSON zo servera, ANIMÁCIE | vue
 
 Tu už sa trochu rozšupnem a pridám animácie a AJAX/JSON a iné srandy, ale neboj nič.
-Postupne si všetko prejdeme. 
+Postupne si všetko prejdeme.
 
-*V kurze budem písať ES6+ kód.*
-*Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz.*
+_V kurze budem písať ES6+ kód._
+_Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz._
 
 Moderný JavaScript pre React, Angular, Vue, Node (ES2015+)**
 :: **https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015**
 
-*V kurze budem miestami používať JS nástroje ako* ***npm, webpack, atď***.
-*Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz.*
+_V kurze budem miestami používať JS nástroje ako_ **_npm, webpack, atď_**.
+_Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz._
 
 **JavaScript a ES6**
 :: **https://www.learn2code.sk/kurzy/online-kurz-javascript-es6**
@@ -162,7 +157,7 @@ S týmto som sa vo videu hral.
 
 ideálne použi **CREATE REACT APP** (ukážem neskôr v kurze)
 :: [https://create-react-app.dev](https://create-react-app.dev/)
-:: https://reactjs.org/docs/create-a-new-react-app.html#create-react-app 
+:: https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
 
 alebo
 
@@ -172,30 +167,30 @@ alebo
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
-*len ty si samozrejme nakopči* ***aktuálne***, *z react dokumentácie*
+_len ty si samozrejme nakopči_ **_aktuálne_**, _z react dokumentácie_
 
 komponent cez **Classy** (neskôr ukážem cez funkcie)
 
 ```react
 class App extends React.Component {
-  
+
     this.state = {
         dude: 'Marceline the Vampire'
     }
     render() {
         return <div>{this.state.dude} lives!</div>;
     }
-  
+
 }
- 
+
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 **JSX pravidlá**
 
-1) **className** namiesto class
-2) atribúty sú **camelCase** (onClick, tabIndex, ...)
-3) tagy musíš uzavrieť (`<br />`namiesto `<br>`, `<img />` namiesto `<img>`)
+1. **className** namiesto class
+2. atribúty sú **camelCase** (onClick, tabIndex, ...)
+3. tagy musíš uzavrieť (`<br />`namiesto `<br>`, `<img />` namiesto `<img>`)
 
 ### 07 Robota s FORM-om, iterácia cez POLE
 
@@ -205,7 +200,7 @@ zachyť **zmenu** v inpute
 handleChange = event => {
     this.setState({ dude: event.target.value });
 }
-    
+
 <input
     type="text"
     value={this.state.dude}
@@ -220,7 +215,7 @@ na prejazd cez pole použi **map()** (alebo **filter()** a **concat()**)
 
 ```react
 const dudes = this.state.characters.map(dude => <li key={dude.id}>{dude.who}</li>);
-  
+
 <ul>{dudes}</ul>
 ```
 
@@ -248,7 +243,7 @@ ak máš **pole v stave** a potrebuješ doň **pridať novú hodnotu**
 [...starePole, novaHodnota]
 ```
 
-*vytvor nové pole,* [*rozlož doň*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) *hodnoty starého poľa, pridaj novú hodnotu*
+_vytvor nové pole,_ [_rozlož doň_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) _hodnoty starého poľa, pridaj novú hodnotu_
 
 **spread operator**
 :: https://leanpub.com/understandinges6/read#leanpub-auto-the-spread-operator
@@ -290,14 +285,14 @@ v **state** objekte je teraz správny, aktuálny stav komponentu
 nájdi **max ID v poli**
 
 ```react
-Math.max(...this.state.characters.map(d => d.id)) 
+Math.max(...this.state.characters.map(d => d.id))
 ```
 
 či bol **stlačený ENTER**
 
 ```react
 <input onKeyPress={this.handleSubmit} />
-  
+
 handleSubmit = event => {
     if (event.key === 'Enter') {
         ...
@@ -321,7 +316,7 @@ ak chceš do metódy preposlať **aj vlastné dáta aj event objekt**
 
 ```react
 onChange={this.handleCool(dude)}
-  
+
 handleCool = dude => event => {
     console.log(dude, event)
 }
@@ -331,7 +326,7 @@ alebo takto
 
 ```react
 onChange={event => this.handleCool(dude, event)}
-  
+
 handleCool = (dude, event) => { ... }
 ```
 
@@ -502,27 +497,33 @@ a ešte
 :: [https://medium.com/hackernoon/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thi...](https://medium.com/hackernoon/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
 :: [https://marmelab.com/blog/2015/12/17/react-directory-structure.html](https://marmelab.com/blog/2015/12/17/react-directory-structure.html)
 
+### 19 React ROUTER
 
+**REACT ROUTER**
 
+```cmd
+yarn add react-router-dom
+yarn add --dev @types/react-router-dom
+```
 
+**REACT ROUTER**
+:: [https://reacttraining.com/react-router/web/guides/quick-start](https://reacttraining.com/react-router/web/guides/quick-start)
+:: [https://blog.pshrmn.com/simple-react-router-v4-tutorial/](https://blog.pshrmn.com/simple-react-router-v4-tutorial/)
+:: [https://codesandbox.io/s/vvoqvk78](https://codesandbox.io/s/vvoqvk78)
 
+**HASH ROUTER vs BROWSER ROUTER**
+:: [https://stackoverflow.com/questions/51974369/hashrouter-vs-browserrouter](https://stackoverflow.com/questions/51974369/hashrouter-vs-browserrouter)
 
+### 20 Tvoje prvé (lol, lož) FUNCTION KOMPONENTY, podstránky
 
+```
+> command palette
+"es7 snippet search"
+"typescript"
+```
 
+ja na typescript komponenty používam snippet
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+tsrafce
+```
