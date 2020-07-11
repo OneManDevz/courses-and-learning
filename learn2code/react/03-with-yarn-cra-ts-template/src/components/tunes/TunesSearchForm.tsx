@@ -2,9 +2,12 @@ import React, { ChangeEvent, FormEvent, useRef } from 'react'
 import { debounce } from 'lodash-es'
 import './TunesSearchForm.scss'
 
-interface Props {}
+interface Props {
+	onSearch: (query: string) => void
+}
 
-const TunesSearchForm: React.FC<Props> = () => {
+const TunesSearchForm: React.FC<Props> = (props: Props) => {
+	const { onSearch } = props
 	const searchInput = useRef<HTMLInputElement>(null)
 
 	const handleInput = debounce((e: ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +20,8 @@ const TunesSearchForm: React.FC<Props> = () => {
 	}
 
 	const searchForMusic = () => {
-		console.log(searchInput.current?.value)
+		let searchString = searchInput.current?.value
+		if (searchString) onSearch(searchString)
 	}
 
 	return (
