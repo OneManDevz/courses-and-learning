@@ -762,7 +762,20 @@ Zjednoduší ti to rozmýšľanie nad komponentami a nebudeš mať nutkanie pou�
 **TOP-DOWN DATA FLOW**
 :: [https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down](https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down)
 
+### 30 REDUX (nie)
 
+**Redux je knižnica na manažovanie stavu.**
+Namiesto toho, aby stal bol roztrúsený po komponentoch, bude všetok v tzv. **STORE**. Teória dobrá, v praxi skôr lepšie pre veľké projekty. Rozhodne nie pre všetky, rozhodne nie, keď sa ešte len učíš. Pretože kód je komplikovaný.
+
+**REDUX, VUEX, NgRx STORE**
+:: [https://redux.js.org](https://redux.js.org/)
+:: [https://vuex.vuejs.org](https://vuex.vuejs.org/)
+:: [https://ngrx.io/guide/store](https://ngrx.io/guide/store)
+
+**YOU MIGHT NOT NEED REDUX**
+:: [https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
+**WHEN TO USE A STORE AND WHY?**
+:: [https://blog.angular-university.io/angular-2-redux-ngrx-rxjs](https://blog.angular-university.io/angular-2-redux-ngrx-rxjs)
 
 
 
