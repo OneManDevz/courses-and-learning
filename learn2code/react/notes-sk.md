@@ -872,7 +872,27 @@ yarn add --dev @types/lodash-es
 :: [https://pokeapi.com](https://pokeapi.com/)
 :: [https://api.abalin.net](https://api.abalin.net/)
 
+### 34 Extract data, Samotvorba Interfacu, OBJECT DESTRUCTURING, typ Song
 
+**Paste JSON as Code**
+:: [https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
+:: [https://blog.quicktype.io/quicktype-extensions](https://blog.quicktype.io/quicktype-extensions/)
+
+sprav si funkciu, ktorá z objektu **vyextrahuje** len chcené vlastnosti
+
+```typescript
+const extractData({ trackName: title }) {
+    return { title }
+}
+```
+
+potom do nej pošleš objekt **extractData(obj)** a vráti sa ti nový objekt, v ktorom zostane len title
+
+**object destructuring**
+:: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment](https://stackoverflow.com/questions/39672807/types-in-object-destructuring)
+
+**types in object destructuring?**
+:: [https://stackoverflow.com/questions/39672807/types-in-object-destructuring](https://stackoverflow.com/questions/39672807/types-in-object-destructuring) (aj keď vždy byť skeptický k stackoverflow)
 
 
 

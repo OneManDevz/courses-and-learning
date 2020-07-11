@@ -15,9 +15,22 @@ const Tunes: React.FC = () => {
 				&limit=5`
 			)
 			.then((response) => {
-				console.log(response)
-				setSongs(response.data.results)
+				let iTunesSongs = response.data.results
+					.filter((song: any) => song.kind === 'song')
+					.map((song: any) => extractData(song))
+				setSongs(iTunesSongs)
 			})
+	}
+
+	const extractData = ({
+		trackId: id,
+		artistName: artist,
+		previewUrl: audioFile,
+		artworkUrl100: artwork,
+		trackName: title,
+		collectionName: album,
+	}: any) => {
+		return { id, artist, audioFile, artwork, title, album }
 	}
 
 	return (
