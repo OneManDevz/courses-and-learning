@@ -102,7 +102,7 @@ Ideme na to. Zhurta. Na čo čakať. Na nič.
 V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu.
 
 Všetky veci, ktoré ukážem, potom v kurze postupne vysvetlím.
-**Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "**Materiály\*\*".
+**Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "Materiály".**
 
 Sťahuj si ho. A hraj sa s ním. Upravuj môj kód. Meň ho, rob z neho vlastnú stránku. Uč sa podľa videí, ale pokojne kopíruj kusy z môjho kódu. Vylepšuj ho. Hraj sa. Zabávaj sa. Makaj.
 
@@ -134,20 +134,21 @@ _V kurze budem písať ES6+ kód._
 _Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz._
 
 Moderný JavaScript pre React, Angular, Vue, Node (ES2015+)**
-:: **https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015**
+:: https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015
 
 _V kurze budem miestami používať JS nástroje ako_ **_npm, webpack, atď_**.
 _Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz._
 
 **JavaScript a ES6**
-:: **https://www.learn2code.sk/kurzy/online-kurz-javascript-es6**
+:: https://www.learn2code.sk/kurzy/online-kurz-javascript-es6
 
 Tento v sebe obsahuje aj celý ten "Moderný JavaScript" kurz. Je to monštrum. Spapal ho.
 
 S týmto som sa vo videu hral.
 
-**myjson
-**:: [http://myjson.com
+**myjson**
+
+:: [http://myjson.com
 ](http://myjson.com/):: https://api.myjson.com/bins/zg7ze
 
 ### 06 Class komponent, JSX, stav/state cez setState
@@ -255,8 +256,9 @@ v [snippetoch](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7
 
 pre setState s objektom a setState s funkciou
 
-**setState s objektom
-**použi, ak do stavu ukladáš kompletne novú hodnotu
+**setState s objektom**
+
+použi, ak do stavu ukladáš kompletne novú hodnotu
 
 ```react
 this.setState({
@@ -264,8 +266,9 @@ this.setState({
 })
 ```
 
-**setState s funkciou
-**ak pre nový stav potrebuješ aktuálnu hodnotu stavu (to, čo je v stave momentálne)
+**setState s funkciou**
+
+ak pre nový stav potrebuješ aktuálnu hodnotu stavu (to, čo je v stave momentálne)
 
 ```react
 this.setState(state => {
@@ -555,7 +558,34 @@ tsrafce
 **a ešte aj**
 :: [https://youtu.be/3IG0Y63LkDM](https://youtu.be/3IG0Y63LkDM)
 
+### 23 HOOKS API, useState, useEffect, VEDĽAJŠIE EFEKTY
 
+**useEffect chceš napríklad keď:**
+
+```
+- manipulujes s DOMom
+- ked potrebujes event listeneri pripnut
+- ked potrebujes fetchnut data, tahat json z nejakeho apicka
+- alebo ked chces sputit timer cez setTimout
+```
+
+**HOOKS API**
+:: https://reactjs.org/docs/hooks-intro.html
+:: https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889
+:: https://reactjs.org/docs/hooks-overview.html
+:: https://reactjs.org/docs/hooks-reference.html
+:: https://reactjs.org/docs/hooks-faq.html
+
+**useState + useEffect**
+:: https://reactjs.org/docs/hooks-state.html
+:: https://reactjs.org/docs/hooks-effect.html
+:: https://overreacted.io/a-complete-guide-to-useeffect/
+
+**HOOKS + AJAX**
+:: https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c
+
+**TYPESCRIPT + HOOKS**
+:: https://www.carlrippon.com/typed-usestate-with-typescript
 
 
 
