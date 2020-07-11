@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
+import './TheNavigation.scss'
 interface Props {}
 
-const TheNavigations: React.FC<Props> = () => {
+const TheNavigation: React.FC<Props> = () => {
 	return (
 		<nav className="navigation">
 			<NavLink to="/" exact>
@@ -15,4 +15,4 @@ const TheNavigations: React.FC<Props> = () => {
 	)
 }
 
-export default TheNavigations
+export default TheNavigation

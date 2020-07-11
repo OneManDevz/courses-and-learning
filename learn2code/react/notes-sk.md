@@ -527,3 +527,16 @@ ja na typescript komponenty používam snippet
 ```
 tsrafce
 ```
+
+### 21 INLINE styles, css-in-js, STYLED COMPONENTS, CSS MODULES
+
+**CSS IN REACT**
+:: [https://styled-components.com/docs/basics#motivation](https://styled-components.com/docs/basics#motivation)
+:: [https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e](https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e)
+:: [https://blog.bitsrc.io/5-ways-to-style-react-components-in-2019-30f1ccc2b5b](https://blog.bitsrc.io/5-ways-to-style-react-components-in-2019-30f1ccc2b5b)
+:: [https://alligator.io/react/react-css](https://alligator.io/react/react-css)
+**REACT SASS + MODULES**
+:: [https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e](https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e)
+
+**STYLED COMPONENTS**
+:: [https://www.iamtimsmith.com/blog/how-to-use-styles-in-a-react-js-application](https://www.iamtimsmith.com/blog/how-to-use-styles-in-a-react-js-application)

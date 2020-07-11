@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.scss'
 import { Switch, Route } from 'react-router-dom'
-import TheNavigation from './components/TheNavigations'
+import TheNavigation from './components/TheNavigation'
 import Home from './views/Home'
 import About from './views/About'
 import Tunes from './views/Tunes'
