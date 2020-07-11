@@ -1,8 +1,10 @@
 export interface Song {
 	id: number
 	artist: string
-	name: string
-	albumArt?: string
+	audioFile: string
+	artwork?: string
+	title: string
+	album: string
 }
 
 export interface User {

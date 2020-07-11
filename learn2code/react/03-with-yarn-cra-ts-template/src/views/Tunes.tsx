@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TunesList from '../components/tunes/TunesList'
 import TunesSearchForm from '../components/tunes/TunesSearchForm'
 import axios from 'axios'
+import { Song } from '../types'
 
 interface SongFromITunes {
 	trackId: number
@@ -40,7 +41,7 @@ const Tunes: React.FC = () => {
 		trackName: title,
 		collectionName: album,
 	}: SongFromITunes) => {
-		return { id, artist, audioFile, artwork, title, album }
+		return { id, artist, audioFile, artwork, title, album } as Song
 	}
 
 	return (
