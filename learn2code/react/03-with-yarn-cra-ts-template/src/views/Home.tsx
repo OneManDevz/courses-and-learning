@@ -1,10 +1,26 @@
 import React from 'react'
+import './Home.scss'
+import logo from '../assets/logo.svg'
 
 const Home: React.FC = () => {
 	return (
 		<div className="home">
-			<h1>Homepage</h1>
-			<p>Brekeke</p>
+			<img className="logo" src={logo} alt="react logo" />
+
+			<h1>Title</h1>
+
+			<p>
+				Hot singles in your area. <br />
+				Hotter react in your&nbsp;
+				<a
+					href="https://reactjs.org/docs"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					documentation
+				</a>
+				.
+			</p>
 		</div>
 	)
 }

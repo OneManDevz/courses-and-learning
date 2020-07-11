@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Home: React.FC = () => {
+const Tunes: React.FC = () => {
 	return (
-		<div className="home">
+		<div className="tunes">
 			<h1>Tunes</h1>
 			<p>Songy</p>
 		</div>
 	)
 }
 
-export default Home
+export default Tunes

@@ -540,3 +540,26 @@ tsrafce
 
 **STYLED COMPONENTS**
 :: [https://www.iamtimsmith.com/blog/how-to-use-styles-in-a-react-js-application](https://www.iamtimsmith.com/blog/how-to-use-styles-in-a-react-js-application)
+
+### 22 REUSABLE CSS rady, JSX opakovačky, podstránky
+
+**pozri si**
+:: [https://youtu.be/9YUsiwRlz2s](https://youtu.be/9YUsiwRlz2s)
+
+**aj takéto**
+:: [https://youtu.be/MhTDp5FwfmM](https://youtu.be/MhTDp5FwfmM)
+
+**a toto**
+:: [https://youtu.be/J3eotWyZv5c](https://youtu.be/J3eotWyZv5c)
+
+**a ešte aj**
+:: [https://youtu.be/3IG0Y63LkDM](https://youtu.be/3IG0Y63LkDM)
+
+
+
+
+
+
+
+
+
