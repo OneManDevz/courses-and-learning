@@ -708,3 +708,62 @@ React.FC<Props> = (props) => {
 **THINKING IN REACT, STATE vs. PROPS**
 :: [https://reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
 :: [https://lucybain.com/blog/2016/react-state-vs-pros](https://lucybain.com/blog/2016/react-state-vs-pros)
+
+### 28 KOMUNIKÁCIA cez CALLBACK FUNC od decka k rodičovi
+
+v **rodičovi** pridáš metódu
+
+```react
+const handleSearchFormSubmit = (data: string) => {
+  
+}
+```
+
+cez **PROP** ju prepošleš decku
+
+```react
+onSearchFormSubmit={handleSearchFormSubmit}
+```
+
+v **decku** príjmeš funkciu od rodiča
+
+```react
+interface Props {
+    onSearchFormSubmit: (data: string) => void
+}
+```
+
+a potom ju v dieťati môžeš zavolať 
+
+```react
+props.onSearchFormSubmit(query)
+```
+
+takto "poprosíš" rodiča, aby niečo spravil s dátami
+
+**Thinking in React**
+:: [https://reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
+
+**Identify Where Your State Should Live**
+:: [https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

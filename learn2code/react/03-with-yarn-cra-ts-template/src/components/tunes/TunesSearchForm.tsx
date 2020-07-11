@@ -1,9 +1,11 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react'
 import './TunesSearchForm.scss'
 
-interface Props {}
+interface Props {
+	onSearchFormSubmit: (data: string) => void
+}
 
-const TunesSearchForm: React.FC<Props> = () => {
+const TunesSearchForm: React.FC<Props> = (props: Props) => {
 	const [searchQuery, setSearchQuery] = useState('')
 
 	const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
@@ -12,13 +14,7 @@ const TunesSearchForm: React.FC<Props> = () => {
 
 	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
-		// const newSong = {
-		// 	id: Math.max(...songs.map((s) => s.id)) + 1,
-		// 	artist: searchQuery,
-		// 	name: searchQuery,
-		// }
-
-		// setSongs([...songs, newSong])
+		props.onSearchFormSubmit(searchQuery)
 	}
 
 	return (
