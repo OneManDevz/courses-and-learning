@@ -422,13 +422,66 @@ yarn start (alebo npm run start)
 :: https://devhints.io/typescript
 :: [https://www.typescriptlang.org](https://www.typescriptlang.org/)
 
+### 15 KOMPONENTY, čo je komponent a prečo a taktiež ako a ešte raz prečo
 
+Ak ti v HTML jazyku niečo chýba, môžeš si to doprogramovať.
+Cez **komponenty**.
 
+napríklad takýto **color picker**
+:: https://casesandberg.github.io/react-color
 
+**pre inšpiráciu**
+:: [https://www.kiwi.com](https://www.kiwi.com/)
+:: https://bulma.io/documentation/components
 
+**react štruktúra súborov**
+:: https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
+:: https://medium.com/hackernoon/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed
+:: https://marmelab.com/blog/2015/12/17/react-directory-structure.html
 
+### 16 Druhá appka s iTunes cez KOMPONENTY a v TypeScripte
 
+spravíme druhá appku
+budeme si púštať itunes pesničky
+a ty si...
 
+**...pusti toto video**
+https://youtu.be/jO_UVHKp5G0
+
+**a toto**
+https://youtu.be/fCUTX1jurJ4
+
+**a ešte toto**
+https://youtu.be/8NFy6Uc2BHs
+
+**plus toto**
+https://youtu.be/TebCHHCw9rY
+
+**a toto**
+https://youtu.be/8zfYO9sZjrE
+
+alebo nie, je to na tebe.
+
+### 17 CREATE-REACT-APP s TypeScriptom, iTunes appka
+
+**create react app**
+:: [https://create-react-app.dev](https://create-react-app.dev/)
+
+**plus typescript**
+
+:: https://create-react-app.dev/docs/adding-typescript
+
+```cmd
+yarn create react-app react-tunes-ts --template typescript
+cd react-tunes-ts
+yarn serve
+```
+
+**sass support**
+
+```
+yarn add node-sass
+```
 
 
 
