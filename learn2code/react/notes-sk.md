@@ -747,7 +747,20 @@ takto "poprosíš" rodiča, aby niečo spravil s dátami
 **Identify Where Your State Should Live**
 :: [https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live)
 
+### 29 SINGLE SOURCE OF TRUTH, vytiahni stav do rodiča
 
+Ak viac komponentov používa rovnaké dáta, **nájdi ich najbližšieho spoločného rodiča a presuň dáta doň**. Stav žije v spoločnom rodičovi, nie je roztrúsený všelikde po komponentoch.
+
+Toto je myšlienka, ktorú môžeš používať aj pri Vue alebo Angulare.
+Zjednoduší ti to rozmýšľanie nad komponentami a nebudeš mať nutkanie používať prehnané veci ako Redux.
+
+**THINKING IN REACT**
+:: [https://reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
+
+**LIFTING STATE UP**
+:: [https://reactjs.org/docs/lifting-state-up.html](https://reactjs.org/docs/lifting-state-up.html)
+**TOP-DOWN DATA FLOW**
+:: [https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down](https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down)
 
 
 

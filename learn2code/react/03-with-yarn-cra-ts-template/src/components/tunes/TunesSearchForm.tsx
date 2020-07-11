@@ -1,20 +1,22 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react'
+import React, { ChangeEvent, FormEvent } from 'react'
 import './TunesSearchForm.scss'
 
 interface Props {
+	searchQuery: string
 	onSearchFormSubmit: (data: string) => void
+	onInputChange: (data: string) => void
 }
 
 const TunesSearchForm: React.FC<Props> = (props: Props) => {
-	const [searchQuery, setSearchQuery] = useState('')
+	const { searchQuery, onSearchFormSubmit, onInputChange } = props
 
 	const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
-		setSearchQuery(e.target.value)
+		onInputChange(e.target.value)
 	}
 
 	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
-		props.onSearchFormSubmit(searchQuery)
+		onSearchFormSubmit(searchQuery)
 	}
 
 	return (
