@@ -836,25 +836,41 @@ Chyba je v mojom videu.
 :: [https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element](https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element)
 :: [https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput](https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput)
 
+### 33 LODASH, @types, iTunes api, AXIOS
 
+**Package napísane v JavaScripte nemajú typové definície.**
+Ak ich chceš pridať, stačí doinštalovať **@types package**, ktorý pravdepodobne existuje. Inštaluj ho ako **dev dependency**, lebo je len pre teba, počas kódenia. Nepatrí do výsledného bundle pre prehliadač.
+Napríklad:
 
+```
+yarn add lodash-es
+yarn add --dev @types/lodash-es
+```
 
+**iTunes DOKUMENTACIA**
+:: [https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api)
 
+**Lodash DOKUMENTACIA, debounce**
+:: [https://lodash.com/docs](https://lodash.com/docs)
+:: [https://lodash.com/docs#debounce](https://lodash.com/docs#debounce)
 
+**REACT ON/HANDLE NAMING CONVENTION**
+:: [https://medium.com/javascript-in-plain-english/handy-naming-conventions-for-event-handler-functions-props-in-react-fc1cbb791364](https://medium.com/javascript-in-plain-english/handy-naming-conventions-for-event-handler-functions-props-in-react-fc1cbb791364)
+:: [https://jaketrent.com/post/naming-event-handlers-react/](https://jaketrent.com/post/naming-event-handlers-react/)
 
+**(free) apis**
+:: [https://reqres.in](https://reqres.in/)
+:: [https://github.com/toddmotto/public-apis](https://github.com/toddmotto/public-apis)
+:: [https://any-api.com](https://any-api.com/)
+:: [https://www.reddit.com/r/webdev/comments/3wrswc/what_are_some_fun_apis_to_play_with](https://www.reddit.com/r/webdev/comments/3wrswc/what_are_some_fun_apis_to_play_with)
+:: [https://www.reddit.com/r/RedLetterMedia.json](https://www.reddit.com/r/RedLetterMedia.json)
+:: [https://dev.to/aumayeung/free-and-fake-apis-you-can-use-to-practice-front-end-development-4eck](https://dev.to/aumayeung/free-and-fake-apis-you-can-use-to-practice-front-end-development-4eck)
 
-
-
-
-
-
-
-
-
-
-
-
-
+**môj výber**
+:: [https://ghibliapi.herokuapp.com](https://ghibliapi.herokuapp.com/)
+:: [https://api.nasa.gov](https://api.nasa.gov/)
+:: [https://pokeapi.com](https://pokeapi.com/)
+:: [https://api.abalin.net](https://api.abalin.net/)
 
 
 
