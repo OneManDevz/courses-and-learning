@@ -1,22 +1,22 @@
-import React, { ChangeEvent, FormEvent } from 'react'
+import React, { ChangeEvent, FormEvent, useRef } from 'react'
 import './TunesSearchForm.scss'
 
-interface Props {
-	searchQuery: string
-	onSearchFormSubmit: (data: string) => void
-	onInputChange: (data: string) => void
-}
+interface Props {}
 
-const TunesSearchForm: React.FC<Props> = (props: Props) => {
-	const { searchQuery, onSearchFormSubmit, onInputChange } = props
+const TunesSearchForm: React.FC<Props> = () => {
+	const searchInput = useRef<HTMLInputElement>(null)
 
 	const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
-		onInputChange(e.target.value)
+		searchForMusic()
 	}
 
 	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
-		onSearchFormSubmit(searchQuery)
+		searchForMusic()
+	}
+
+	const searchForMusic = () => {
+		console.log(searchInput.current?.value)
 	}
 
 	return (
@@ -24,9 +24,10 @@ const TunesSearchForm: React.FC<Props> = (props: Props) => {
 			<form onSubmit={handleSubmit}>
 				<input
 					type="text"
-					value={searchQuery}
 					onChange={handleInput}
 					className="search"
+					ref={searchInput}
+					autoFocus
 				/>
 			</form>
 		</div>

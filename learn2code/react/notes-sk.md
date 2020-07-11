@@ -803,3 +803,68 @@ Môžeš si spraviť súbor týchto typov. Naimportovať všade, kde ich chceš 
 ```react
 import { Song } from '../../types'
 ```
+
+### 32 useRef odkaz na DOM elementy, OPTIONAL CHAINING, refaktoring
+
+V tomto videu sa toho deje hrozne veľa. Prepáč.
+Potreboval som spraviť **refactoring**, trochu zjednodušiť kód. A keď prepisujem kopu súborov vo videu rýchlo za sebou, tažko sa to sleduje. Je to rýchle jak hokejista na bobovej dráhe.
+
+V úvode videa poviem, čo všetko presne vo videu budem robiť. V skratke **odstránim searchQuery** zo stavu a nahradím ho **pomocou useRef**. Tým pádom sa mi zjednoduší komunikácia medzi SearchForm komponentom a jeho rodičom - lebo **môžem odstrániť kopu callback funkcií.** Čo aj spravím.
+
+Zostane mi jednoduchší kód. Na konci komplikovaného videa:)
+
+Viac menej som v rámci prípravy na finiš appky potreboval spraviť niekoľko drobností. A všetky som ich dal do tohoto videa.
+
+Ak sa ti to ťažko sleduje, chyba nie je v tvojom príjmači. Ani v tvojej hlave.
+Chyba je v mojom videu.
+**Whoops!**
+
+**REFs IN FUNCTION COMPONENTS (& TYPESCRIPT)**
+
+:: [https://reactjs.org/docs/hooks-reference.html#useref](https://reactjs.org/docs/hooks-reference.html#useref)
+:: [https://reactjs.org/docs/refs-and-the-dom.html#refs-and-function-components](https://reactjs.org/docs/refs-and-the-dom.html#refs-and-function-components)
+:: [https://blog.logrocket.com/how-to-use-react-createref-ea014ad09dba/](https://blog.logrocket.com/how-to-use-react-createref-ea014ad09dba/)
+:: [https://linguinecode.com/post/how-to-use-react-useref-with-typescript](https://linguinecode.com/post/how-to-use-react-useref-with-typescript)
+
+**When to use React useRef and useLayoutEffect vs useEffect**
+:: [https://linguinecode.com/post/when-to-use-useref-and-uselayouteffect](https://linguinecode.com/post/when-to-use-useref-and-uselayouteffect)
+
+**OPTIONAL CHAINING**
+:: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+**ON CHANGE / ON INPUT**
+:: [https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element](https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element)
+:: [https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput](https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
