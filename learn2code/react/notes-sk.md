@@ -1,3 +1,79 @@
+### 01 React
+
+Tri veci:
+
+**1. REAKTÍVNOSŤ**
+**2. SYNCHRONIZÁCIA UI so STAVOM**
+**3. Programovanie cez KOMPONENTY**
+
+Porozprávam o tom.
+Naučím ťa.
+
+**react vs angular vs vue**
+:: https://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue
+:: https://github.com/m98/react-angular-vue-starers
+:: https://merehead.com/blog/angular-vs-react-vs-vue-2020/
+
+**pár starších textov, ale furt ok**
+:: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/
+:: https://www.freecodecamp.org/news/complete-guide-for-front-end-developers-javascript-frameworks-2019/
+:: https://medium.com/@TechMagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
+:: https://zendev.com/2018/06/19/react-usage-beating-vue-angular.html
+:: https://www.youtube.com/watch?v=SWZ_4YBFBhs
+
+### 02 Ako to bude prebiehať (nastavenia, pluginy, programy)
+
+Dve appky.
+**NA PRVEJ)** ukážem reaktivitu v praxi
+**NA DRUHEJ)** ťa naučím komponenty a TypeScript
+
+Otázky ohľadom kódu prosím sem **https://www.facebook.com/groups/webrebeli/** alebo do diskusie.
+
+Mám JavaScript kurzy, ak by si to potreboval:)
+
+**VEĽKÝ JS KURZ VŠETKÉHO**
+:: https://www.learn2code.sk/kurzy/online-kurz-javascript-es6
+
+**MALÝ KURZ MODERNÝCH JS ZÁPISOV**
+:: https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015
+
+Tieto veci si stiahni a nainštaluj.
+
+**VUE (Vetur a VSCode Snippets)**
+:: https://marketplace.visualstudio.com/items?itemName=octref.vetur
+:: https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets
+
+**VUE DEVTOOLS**
+:: https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/
+:: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
+
+**VUE CHEAT-SHEET**
+:: https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
+:: https://www.vuemastery.com/vue-cheat-sheet/
+
+**REACT (ES7 React/Redux/GraphQL/React-Native snippets)
+
+:: https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+**REACT DEVTOOLS**
+:: https://addons.mozilla.org/en-US/firefox/addon/react-devtools/
+:: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+**REACT CHEAT-SHEET**
+:: https://devhints.io/react
+:: https://jsmanifest.com/react-cheatsheet/
+
+**ANGULAR (Angular Snippets)**
+:: https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2
+
+**AUGURY EXTENSION
+**:: https://addons.mozilla.org/en-US/firefox/addon/angular-augury/
+:: https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
+
+**ANGULAR CHEAT-SHEET**
+:: https://angular.io/guide/cheatsheet
+:: https://devhints.io/typescript
+
 komponent cez Classy (neskôr ukážem cez funkcie)
 
 ```javascript
@@ -18,11 +94,114 @@ ReactDOM.render(<App />, document.getElementById('root'));
 JSX pravidlá
 1) className namiesto class
 2) atribúty sú camelCase (onClick, tabIndex, ...)
-3) tagy musíš uzavrieť (<br /> namiesto <br>, <img /> namiesto <img>)
------------------------------------------------------------------------------------------------------------
 
-zachyť zmenu v inpute
-```javascript
+### 03 Reaktívne appky | najprv vo VUE
+
+Ideme na to. Zhurta. Na čo čakať. Na nič.
+V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu. 
+
+
+Všetky veci, ktoré ukážem, potom v kurze postupne vysvetlím.
+**Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "**Materiály**".
+
+Sťahuj si ho. A hraj sa s ním. Upravuj môj kód. Meň ho, rob z neho vlastnú stránku. Uč sa podľa videí, ale pokojne kopíruj kusy z môjho kódu. Vylepšuj ho. Hraj sa. Zabávaj sa. Makaj.
+
+**Vue.js**
+:: [https://vuejs.org](https://vuejs.org/)
+:: [https://vuejs.org/guide](https://vuejs.org/guide/)
+**Vue štartér**
+
+```vue
+const app = new Vue({
+    el: '#app',
+    data: {
+      
+    }
+})
+```
+
+### 04 PODMIENKY a CYKLY v HTML, SYNCHRONIZÁCIA stavu s UI | vue
+
+**Reaktívne frameworky** (Vue, React, Angular)
+
+zo statického HTML kódu spravia živú šablónu. HTML kódu pridáš pravidláva vždy keď príde zmena, automaticky na ňu **zareaguje**. 
+
+Nemusíšvfurt selectovať elementy zo stránky, prependovať, appendovať, vyrábať nové prázdne, naťahovať sa s classListom... ty napíšeš HTML kód. A povieš mu *"buď tu iba ak platí toto"* a Vue sa postará o zvyšok. 
+
+Môžemvtu vypisovať, kým sa mi prsty neodlomia a neodkráčajú v proteste do západu slnka, ale veď pozri video. Vieš jak sa hovorí - lepšie raz youtube, ako tisíckrát čítať. Aj keď toto neni youtube. (Je to vimeo.)
+
+### 05 JSON zo servera, ANIMÁCIE | vue
+
+Tu už sa trochu rozšupnem a pridám animácie a AJAX/JSON a iné srandy, ale neboj nič.
+Postupne si všetko prejdeme. 
+
+*V kurze budem písať ES6+ kód.*
+*Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz.*
+
+Moderný JavaScript pre React, Angular, Vue, Node (ES2015+)**
+:: **https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015**
+
+*V kurze budem miestami používať JS nástroje ako* ***npm, webpack, atď***.
+*Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz.*
+
+**JavaScript a ES6**
+:: **https://www.learn2code.sk/kurzy/online-kurz-javascript-es6**
+
+Tento v sebe obsahuje aj celý ten "Moderný JavaScript" kurz. Je to monštrum. Spapal ho.
+
+S týmto som sa vo videu hral.
+
+**myjson
+**:: [http://myjson.com
+](http://myjson.com/):: https://api.myjson.com/bins/zg7ze
+
+### 06 Class komponent, JSX, stav/state cez setState
+
+**react
+**:: [https://reactjs.org](https://reactjs.org/)
+
+ideálne použi **CREATE REACT APP** (ukážem neskôr v kurze)
+:: [https://create-react-app.dev](https://create-react-app.dev/)
+:: https://reactjs.org/docs/create-a-new-react-app.html#create-react-app 
+
+alebo
+
+```html
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+
+*len ty si samozrejme nakopči* ***aktuálne***, *z react dokumentácie*
+
+komponent cez **Classy** (neskôr ukážem cez funkcie)
+
+```react
+class App extends React.Component {
+  
+    this.state = {
+        dude: 'Marceline the Vampire'
+    }
+    render() {
+        return <div>{this.state.dude} lives!</div>;
+    }
+  
+}
+ 
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+**JSX pravidlá**
+
+1) **className** namiesto class
+2) atribúty sú **camelCase** (onClick, tabIndex, ...)
+3) tagy musíš uzavrieť (`<br />`namiesto `<br>`, `<img />` namiesto `<img>`)
+
+### 07 Robota s FORM-om, iterácia cez POLE
+
+zachyť **zmenu** v inpute
+
+```react
 handleChange = event => {
     this.setState({ dude: event.target.value });
 }
@@ -34,19 +213,22 @@ handleChange = event => {
 />
 ```
 
-na prejazd cez pole použi map() (alebo filter() a concat())
+na prejazd cez pole použi **map()** (alebo **filter()** a **concat()**)
 žiaden each alebo forEach
 
-[list and keys](https://reactjs.org/docs/lists-and-keys.html)
-```javascript
+:: https://reactjs.org/docs/lists-and-keys.html
+
+```react
 const dudes = this.state.characters.map(dude => <li key={dude.id}>{dude.who}</li>);
- 
+  
 <ul>{dudes}</ul>
 ```
------------------------------------------------------------------------------------------------------------
 
-zobraz element AK platí podmienka
-```javascript
+### 08 Zobraz IF platí, odošli FORM a spracuj dáta
+
+zobraz element **AK platí podmienka**
+
+```react
 {podmienka && (
     <small>
         <em> - lol, short name</em>
@@ -54,53 +236,66 @@ zobraz element AK platí podmienka
 )}
 ```
 
-pridaj class AK platí podmienka
-```javascript
+pridaj class **AK platí podmienka**
+
+```react
 className={podmienka ? 'strong' : ''}
 ```
 
-ak máš pole v stave a potrebuješ doň pridať novú hodnotu
-```javascript
+ak máš **pole v stave** a potrebuješ doň **pridať novú hodnotu**
+
+```react
 [...starePole, novaHodnota]
 ```
-vytvor nové pole, rozlož doň hodnoty starého poľa, pridaj novú hodnotu
 
-[spread operator](https://leanpub.com/understandinges6/read#leanpub-auto-the-spread-operator)
-[::](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
------------------------------------------------------------------------------------------------------------
+*vytvor nové pole,* [*rozlož doň*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) *hodnoty starého poľa, pridaj novú hodnotu*
 
-v snippetoch máš 2 skratky sst a ssf
+**spread operator**
+:: https://leanpub.com/understandinges6/read#leanpub-auto-the-spread-operator
+:: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+### 09 setState objekt VS. setState function
+
+v [snippetoch](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) máš 2 skratky **sst** a **ssf**
+
 pre setState s objektom a setState s funkciou
 
-setState s objektom
-použi, ak do stavu ukladáš kompletne novú hodnotu
-```javascript
+**setState s objektom
+**použi, ak do stavu ukladáš kompletne novú hodnotu
+
+```react
 this.setState({
     dude: 'hello!!';
 })
 ```
 
-setState s funkciou
-ak pre nový stav potrebuješ aktuálnu hodnotu stavu (to, čo je v stave momentálne)
-```javascript
+**setState s funkciou
+**ak pre nový stav potrebuješ aktuálnu hodnotu stavu (to, čo je v stave momentálne)
+
+```react
 this.setState(state => {
     return {
         characters: [...state.characters, newDude]
     }
 })
 ```
-v state objekte je teraz správny, aktuálny stav komponentu
 
-[setState objekt vs funkcia](https://reactjs.org/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous)
------------------------------------------------------------------------------------------------------------
+v **state** objekte je teraz správny, aktuálny stav komponentu
 
-nájdi max ID v poli
-```javascript
+**setState objekt vs funkcia**
+:: https://reactjs.org/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous
+
+### 10 Nová JSX šablóna, odoslanie ENTERom
+
+nájdi **max ID v poli**
+
+```react
 Math.max(...this.state.characters.map(d => d.id)) 
 ```
 
-či bol stlačený ENTER
-```javascript
+či bol **stlačený ENTER**
+
+```react
 <input onKeyPress={this.handleSubmit} />
   
 handleSubmit = event => {
@@ -110,8 +305,9 @@ handleSubmit = event => {
 }
 ```
 
-pridávam classy podľa stavu
-```javascript
+pridávam **classy podľa stavu**
+
+```react
 <article
    className={
        dude.cool < 10 ? 'faded' : dude.cool > 50 ? 'gold' : ''
@@ -119,10 +315,11 @@ pridávam classy podľa stavu
 >
 ```
 
------------------------------------------------------------------------------------------------------------
+### 11 UPDATE cool, REMOVE dude
 
-ak chceš do metódy preposlať aj vlastné dáta aj event objekt
-```javascript
+ak chceš do metódy preposlať **aj vlastné dáta aj event objekt**
+
+```react
 onChange={this.handleCool(dude)}
   
 handleCool = dude => event => {
@@ -130,15 +327,17 @@ handleCool = dude => event => {
 }
 ```
 
-alebo takto 
-```jsx
+alebo takto
+
+```react
 onChange={event => this.handleCool(dude, event)}
   
 handleCool = (dude, event) => { ... }
 ```
 
-UPRAVIŤ konkrétny objekt v poli môžeš v map cykle
-```javascript
+**UPRAVIŤ** konkrétny **objekt v poli** môžeš **v map cykle**
+
+```react
 this.setState(state => {
     return {
         characters: state.characters.map(item =>
@@ -148,49 +347,112 @@ this.setState(state => {
 })
 ```
 
-VYMAZAŤ objekt z poľa môžeš cez filter
-```javascript
+**VYMAZAŤ** objekt z poľa môžeš cez **filter**
+
+```react
 this.setState(state => {
     return {
         characters: state.characters.filter(item => item !== dude)
     }
 })
 ```
------------------------------------------------------------------------------------------------------------
 
-feč feč feč
-```javascript
+**update objekt v poli**
+:: https://stackoverflow.com/a/46518653
+
+**add/remove objekt v poli**
+:: https://scriptverse.academy/tutorials/reactjs-update-array-state.html
+
+**poslať hodnotu do metódy**
+:: https://ozmoroz.com/2018/07/pass-value-to-onclick-react/
+:: https://stackoverflow.com/questions/29810914/react-js-onclick-cant-pass-value-to-method
+:: https://upmostly.com/tutorials/react-onclick-event-handling-with-examples
+
+### 12 REF na DOM element, VIRTUAL DOM, JSON, LIFECYCLE metódy
+
+**feč feč feč**
+
+```react
 fetch('https://api.myjson.com/bins/zg7ze')
     .then(res => res.json())
     .then(json => this.setState({ characters: json }))
 ```
-[refs](https://reactjs.org/docs/refs-and-the-dom.html)
-[čo je mount](https://jaketrent.com/post/what-does-mount-mean-in-react)
-[ajax v reacte](https://reactjs.org/docs/faq-ajax.html)
 
-rethinking reactivity
+**refs**
+:: https://reactjs.org/docs/refs-and-the-dom.html
+
+**čo je mount**
+:: https://jaketrent.com/post/what-does-mount-mean-in-react
+
+**ajax v reacte**
+:: https://reactjs.org/docs/faq-ajax.html
+
+**rethinking reactivity**
 :: https://youtu.be/AdNJ3fydeao
 :: https://youtu.be/BzX4aTRPzno
------------------------------------------------------------------------------------------------------------
 
-[create-react-app](https://create-react-app.dev)
+### 13 CREATE-REACT-APP, react SERVER, ANIMÁCIE
 
-ideš na to
-```
+**create-react-app**
+:: [https://create-react-app.dev](https://create-react-app.dev/)
+
+**ideš na to**
+
+```cmd
 npx create-react-app adresar-pre-appku
 cd adresar-pre-appku
 yarn start (alebo npm run start)
 ```
 
-react animácie
-:: [https://reactjs.org/docs/animation.html](https://reactjs.org/docs/animation.html)
-:: [https://github.com/reactjs/react-transition-group](https://github.com/reactjs/react-transition-group)
-:: [https://reactcommunity.org/react-transition-group](https://reactcommunity.org/react-transition-group)
-:: [https://reactcommunity.org/react-transition-group/css-transition](https://reactcommunity.org/react-transition-group/css-transition)
+**react animácie**
+
+:: https://reactjs.org/docs/animation.html
+:: https://github.com/reactjs/react-transition-group
+:: https://reactcommunity.org/react-transition-group
+:: https://reactcommunity.org/react-transition-group/css-transition
+
+**viac spôsobov ako animovať**
+:: https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf
+:: https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935
+:: https://www.tutorialspoint.com/reactjs/reactjs_animations.htm
+
+### 14 TypeScript (je JavaScript, len viac)
+
+**TypeScript**
+:: https://devhints.io/typescript
+:: [https://www.typescriptlang.org](https://www.typescriptlang.org/)
 
 
-viac spôsobov ako animovať
-:: [https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf](https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
-:: [https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935](https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935)
-:: [https://www.tutorialspoint.com/reactjs/reactjs_animations.htm](https://www.tutorialspoint.com/reactjs/reactjs_animations.htm)
------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

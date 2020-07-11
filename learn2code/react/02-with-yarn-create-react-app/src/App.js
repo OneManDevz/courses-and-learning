@@ -22,9 +22,7 @@ class App extends React.Component {
   }
 
   handleChange = (e) => {
-    this.setState({
-      [e.target.title]: e.target.value
-    })
+    this.setState({[e.target.title]: e.target.value})
   }
 
   handleSubmit = (e) => {
@@ -58,21 +56,11 @@ class App extends React.Component {
   handleRating = (show) => (e) => {
     const numParam = +e.target.value //conver to number
 
-    this.setState((state) => {
-      return {
-        shows: state.shows.map((item) =>
-          item === show ? { ...show, numParam } : item
-        )
-      }
-    })
+    this.setState((state) => ({shows: state.shows.map((item) => item === show ? { ...show, numParam } : item)}))
   }
 
   removeShow = (show) => {
-    this.setState((state) => {
-      return {
-        shows: state.shows.filter((item) => item !== show)
-      }
-    })
+    this.setState((state) => ({shows: state.shows.filter((item) => item !== show)}))
   }
 
   listOfShows = () => {
