@@ -4,7 +4,6 @@ import logo from '../assets/logo.svg'
 
 const Home: React.FC = () => {
 	const [title, setTitle] = useState('React Title!')
-	const [count, setCount] = useState(1)
 
 	return (
 		<div className="home">
@@ -12,8 +11,7 @@ const Home: React.FC = () => {
 
 			<h1
 				onClick={() => {
-					setCount(count + 1)
-					setTitle('Breeee' + '!'.repeat(count))
+					setTitle((prevTitle) => prevTitle + '!')
 				}}
 			>
 				{title}

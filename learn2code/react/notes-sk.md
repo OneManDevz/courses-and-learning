@@ -570,22 +570,22 @@ tsrafce
 ```
 
 **HOOKS API**
-:: https://reactjs.org/docs/hooks-intro.html
-:: https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889
-:: https://reactjs.org/docs/hooks-overview.html
-:: https://reactjs.org/docs/hooks-reference.html
-:: https://reactjs.org/docs/hooks-faq.html
+:: [https://reactjs.org/docs/hooks-intro.html](https://reactjs.org/docs/hooks-intro.html)
+:: [https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
+:: [https://reactjs.org/docs/hooks-overview.html](https://reactjs.org/docs/hooks-overview.html)
+:: [https://reactjs.org/docs/hooks-reference.html](https://reactjs.org/docs/hooks-reference.html)
+:: [https://reactjs.org/docs/hooks-faq.html](https://reactjs.org/docs/hooks-faq.html)
 
 **useState + useEffect**
-:: https://reactjs.org/docs/hooks-state.html
-:: https://reactjs.org/docs/hooks-effect.html
-:: https://overreacted.io/a-complete-guide-to-useeffect/
+:: [https://reactjs.org/docs/hooks-state.html](https://reactjs.org/docs/hooks-state.html)
+:: [https://reactjs.org/docs/hooks-effect.html](https://reactjs.org/docs/hooks-effect.html)
+:: [https://overreacted.io/a-complete-guide-to-useeffect/](https://overreacted.io/a-complete-guide-to-useeffect/)
 
 **HOOKS + AJAX**
-:: https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c
+:: [https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c](https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c)
 
 **TYPESCRIPT + HOOKS**
-:: https://www.carlrippon.com/typed-usestate-with-typescript
+:: [https://www.carlrippon.com/typed-usestate-with-typescript](https://www.carlrippon.com/typed-usestate-with-typescript)
 
 
 
