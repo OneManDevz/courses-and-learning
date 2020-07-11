@@ -3,6 +3,16 @@ import TunesList from '../components/tunes/TunesList'
 import TunesSearchForm from '../components/tunes/TunesSearchForm'
 import axios from 'axios'
 
+interface SongFromITunes {
+	trackId: number
+	artistName: string
+	previewUrl: string
+	artworkUrl100?: string
+	trackName: string
+	collectionName: string
+	kind?: string
+}
+
 const Tunes: React.FC = () => {
 	const [songs, setSongs] = useState([])
 
@@ -29,7 +39,7 @@ const Tunes: React.FC = () => {
 		artworkUrl100: artwork,
 		trackName: title,
 		collectionName: album,
-	}: any) => {
+	}: SongFromITunes) => {
 		return { id, artist, audioFile, artwork, title, album }
 	}
 
