@@ -581,6 +581,17 @@ tsrafce
 :: [https://reactjs.org/docs/hooks-effect.html](https://reactjs.org/docs/hooks-effect.html)
 :: [https://overreacted.io/a-complete-guide-to-useeffect/](https://overreacted.io/a-complete-guide-to-useeffect/)
 
+useState
+
+1. Práca so `state` vo functional komponentoch
+
+useEffect
+
+1. Manipulácia s DOM
+2. eventListeners
+3. fetch, ajax, api
+4. setTimeout
+
 **HOOKS + AJAX**
 :: [https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c](https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c)
 
