@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Song } from '../../types'
 import { truncate } from 'lodash-es'
 import './TunesSong.scss'
@@ -10,10 +10,12 @@ interface Props {
 const TunesSong: React.FC<Props> = (props: Props) => {
 	const { song } = props
 
-	const songify = (song: Song): string => {
-		const newTitle = song.artist + ' - ' + song.title
-		return shorten(newTitle, 100)
-	}
+	const songify = useMemo(
+		() => (song: Song): string => {
+			return shorten(song.artist + ' - ' + song.title, 100)
+		},
+		[song.title, song.artist]
+	)
 
 	const shorten = (text: string, len = 55): string => {
 		return truncate(text, { length: len })

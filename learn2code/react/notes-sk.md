@@ -915,7 +915,21 @@ potom do nej pošleš objekt **extractData(obj)** a vráti sa ti nový objekt, v
 **Chumbawamba**
 :: [https://en.wikipedia.org/wiki/The_Boy_Bands_Have_Won](https://en.wikipedia.org/wiki/The_Boy_Bands_Have_Won)
 
+### 36 useEffect a useMemo hooks
 
+**USE MEMO**
+
+Zavolá funkciu len ak sa zmení hodnota v argumente
+
+:: [https://reactjs.org/docs/hooks-reference.html#usememo](https://reactjs.org/docs/hooks-reference.html#usememo)
+:: [https://stackoverflow.com/a/54670367](https://stackoverflow.com/a/54670367)
+
+**USE EFFECT**
+:: [https://overreacted.io/a-complete-guide-to-useeffect/](https://overreacted.io/a-complete-guide-to-useeffect/)
+:: [https://reactjs.org/docs/hooks-reference.html#useeffect](https://reactjs.org/docs/hooks-reference.html#useeffect)
+
+**FETCH DATA WITH REACT HOOKS**
+:: [https://www.robinwieruch.de/react-hooks-fetch-data](https://www.robinwieruch.de/react-hooks-fetch-data)
 
 
 
