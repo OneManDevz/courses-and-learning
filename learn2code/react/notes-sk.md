@@ -133,7 +133,7 @@ Postupne si všetko prejdeme.
 _V kurze budem písať ES6+ kód._
 _Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz._
 
-Moderný JavaScript pre React, Angular, Vue, Node (ES2015+)**
+**Moderný JavaScript pre React, Angular, Vue, Node (ES2015+)**
 :: https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015
 
 _V kurze budem miestami používať JS nástroje ako_ **_npm, webpack, atď_**.
@@ -610,20 +610,20 @@ Pravidlá
 prebehneme cez pole songov
 
 ```javascript
-{songs.map(song => (
-    <li key={song.id}>{JSON.stringify(song)}</li>
-))}
+{
+  songs.map((song) => <li key={song.id}>{JSON.stringify(song)}</li>);
+}
 ```
 
 nový song do poľa
 
 ```javascript
 const newSong = {
-    id: Math.max(...songs.map(s => s.id)) + 1,
-    artist: query,
-    name: query
-}
-setSongs([...songs, newSong])
+  id: Math.max(...songs.map((s) => s.id)) + 1,
+  artist: query,
+  name: query,
+};
+setSongs([...songs, newSong]);
 ```
 
 **REACT FORMS (EVENT TYPES)**
@@ -645,7 +645,7 @@ v rodičovi naimportuješ
 
 ```react
 [ Tunes.tsx ]
-  
+
 // children
 import TunesSearchForm from '../components/tunes/TunesSearchForm'
 import TunesList from '../components/tunes/TunesList'
@@ -693,14 +693,14 @@ v **rodičovi**
 
 v **TheNavigation.tsx**
 
-```react
+```typescript
 // props
 interface Props {
     brand: String
 }
-   
+
 React.FC<Props> = (props) => {
-    // dobry napad je rozlozit objekt props na konstanty 
+    // dobry napad je rozlozit objekt props na konstanty
     const { brand, howMany } = props
 }
 ```
@@ -715,7 +715,7 @@ v **rodičovi** pridáš metódu
 
 ```react
 const handleSearchFormSubmit = (data: string) => {
-  
+
 }
 ```
 
@@ -727,13 +727,13 @@ onSearchFormSubmit={handleSearchFormSubmit}
 
 v **decku** príjmeš funkciu od rodiča
 
-```react
+```typescript
 interface Props {
-    onSearchFormSubmit: (data: string) => void
+  onSearchFormSubmit: (data: string) => void;
 }
 ```
 
-a potom ju v dieťati môžeš zavolať 
+a potom ju v dieťati môžeš zavolať
 
 ```react
 props.onSearchFormSubmit(query)
@@ -777,19 +777,29 @@ Namiesto toho, aby stal bol roztrúsený po komponentoch, bude všetok v tzv. **
 **WHEN TO USE A STORE AND WHY?**
 :: [https://blog.angular-university.io/angular-2-redux-ngrx-rxjs](https://blog.angular-university.io/angular-2-redux-ngrx-rxjs)
 
+### 31 TS INTERFACE, vlastné dátové typy v TS + jeho história
 
+**V TypeScripte si môžeš doprogramovať vlastné dátové typy.**
+Ak máš objekty pre usera, môžeš objektu presne definovať jeho tvar.
+Že z čoho presne sa každý objekt usera musí skladať.
+Potom dostávaš presné rady, chyby, nápovedy.
 
+```typescript
+export interface Song {
+  id: number;
+  artist: string;
+  name: string;
+}
 
+export interface User {
+  firstName: string;
+  lastName: string;
+  favoriteSong?: Song;
+}
+```
 
+Môžeš si spraviť súbor týchto typov. Naimportovať všade, kde ich chceš používať.
 
-
-
-
-
-
-
-
-
-
-
-
+```react
+import { Song } from '../../types'
+```

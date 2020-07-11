@@ -1,11 +1,9 @@
 import React from 'react'
+import { Song } from '../../types'
 import './TunesList.scss'
+
 interface Props {
-	songs: {
-		id: number
-		artist: string
-		name: string
-	}[]
+	songs: Song[]
 }
 
 const TunesList: React.FC<Props> = (props: Props) => {
