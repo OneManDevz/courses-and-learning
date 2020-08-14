@@ -1,13 +1,15 @@
-### 01 React
+### 01 React, Angular, Vue (a TypeScript)
 
-Tri veci:
+Tri nástroje na ten istý job.
+
+Robia tri veci:
 
 **1. REAKTÍVNOSŤ**
 **2. SYNCHRONIZÁCIA UI so STAVOM**
 **3. Programovanie cez KOMPONENTY**
 
 Porozprávam o tom.
-Naučím ťa.
+A o rozdieloch medzi nimi.
 
 **react vs angular vs vue**
 :: https://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue
@@ -21,10 +23,10 @@ Naučím ťa.
 :: https://zendev.com/2018/06/19/react-usage-beating-vue-angular.html
 :: https://www.youtube.com/watch?v=SWZ_4YBFBhs
 
-### 02 Ako to bude prebiehať (nastavenia, pluginy, programy)
+### 02 Ako bude kurz prebiehať (takto)
 
 Dve appky.
-**NA PRVEJ)** ukážem reaktivitu v praxi
+**NA PRVEJ)** ukážem reaktivitu v praxi a porovnám troch tátošov
 **NA DRUHEJ)** ťa naučím komponenty a TypeScript
 
 Otázky ohľadom kódu prosím sem **https://www.facebook.com/groups/webrebeli/** alebo do diskusie.
@@ -36,6 +38,8 @@ Mám JavaScript kurzy, ak by si to potreboval:)
 
 **MALÝ KURZ MODERNÝCH JS ZÁPISOV**
 :: https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015
+
+
 
 Tieto veci si stiahni a nainštaluj.
 
@@ -51,6 +55,8 @@ Tieto veci si stiahni a nainštaluj.
 :: https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
 :: https://www.vuemastery.com/vue-cheat-sheet/
 
+
+
 **REACT (ES7 React/Redux/GraphQL/React-Native snippets)**
 
 :: https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
@@ -63,95 +69,98 @@ Tieto veci si stiahni a nainštaluj.
 :: https://devhints.io/react
 :: https://jsmanifest.com/react-cheatsheet/
 
+
+
 **ANGULAR (Angular Snippets)**
 :: https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2
 
-**AUGURY EXTENSION
-**:: https://addons.mozilla.org/en-US/firefox/addon/angular-augury/
+**AUGURY EXTENSION**:: https://addons.mozilla.org/en-US/firefox/addon/angular-augury/
 :: https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
 
 **ANGULAR CHEAT-SHEET**
 :: https://angular.io/guide/cheatsheet
 :: https://devhints.io/typescript
 
-komponent cez Classy (neskôr ukážem cez funkcie)
 
-```javascript
-class App extends React.Component {
-
-    this.state = {
-        dude: 'Marceline the Vampire'
-    }
-    render() {
-        return <div>{this.state.dude} lives!</div>;
-    }
-
-}
-
-ReactDOM.render(<App />, document.getElementById('root'));
-```
-
-JSX pravidlá
-
-1. className namiesto class
-2. atribúty sú camelCase (onClick, tabIndex, ...)
 
 ### 03 Reaktívne appky | najprv vo VUE
 
 Ideme na to. Zhurta. Na čo čakať. Na nič.
-V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu.
+V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu. 
 
-Všetky veci, ktoré ukážem, potom v kurze postupne vysvetlím.
-**Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "Materiály".**
+**Všetky veci, ktoré ukážem, potom v kurze postupne vysvetlím.
+**Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "**Materiály**".
 
 Sťahuj si ho. A hraj sa s ním. Upravuj môj kód. Meň ho, rob z neho vlastnú stránku. Uč sa podľa videí, ale pokojne kopíruj kusy z môjho kódu. Vylepšuj ho. Hraj sa. Zabávaj sa. Makaj.
+
 
 **Vue.js**
 :: [https://vuejs.org](https://vuejs.org/)
 :: [https://vuejs.org/guide](https://vuejs.org/guide/)
-**Vue štartér**
+**Vue štartér** 
 
-```vue
-const app = new Vue({ el: '#app', data: { } })
 ```
+const app = new Vue({
+    el: '#app',
+    data: {
+      
+    }
+})
+```
+
+
 
 ### 04 PODMIENKY a CYKLY v HTML, SYNCHRONIZÁCIA stavu s UI | vue
 
 **Reaktívne frameworky** (Vue, React, Angular)
 
-zo statického HTML kódu spravia živú šablónu. HTML kódu pridáš pravidláva vždy keď príde zmena, automaticky na ňu **zareaguje**.
+zo statického HTML kódu spravia živú šablónu. HTML kódu pridáš pravidláva vždy keď príde zmena, automaticky na ňu **zareaguje**. 
 
-Nemusíšvfurt selectovať elementy zo stránky, prependovať, appendovať, vyrábať nové prázdne, naťahovať sa s classListom... ty napíšeš HTML kód. A povieš mu _"buď tu iba ak platí toto"_ a Vue sa postará o zvyšok.
+Nemusíšvfurt selectovať elementy zo stránky, prependovať, appendovať, vyrábať nové prázdne, naťahovať sa s classListom... ty napíšeš HTML kód. A povieš mu *"buď tu iba ak platí toto"* a Vue sa postará o zvyšok. 
 
 Môžemvtu vypisovať, kým sa mi prsty neodlomia a neodkráčajú v proteste do západu slnka, ale veď pozri video. Vieš jak sa hovorí - lepšie raz youtube, ako tisíckrát čítať. Aj keď toto neni youtube. (Je to vimeo.)
+
+
 
 ### 05 JSON zo servera, ANIMÁCIE | vue
 
 Tu už sa trochu rozšupnem a pridám animácie a AJAX/JSON a iné srandy, ale neboj nič.
 Postupne si všetko prejdeme.
 
-_V kurze budem písať ES6+ kód._
-_Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz._
+
+
+*V kurze budem písať ES6+ kód.*
+*Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz.*
+
+
 
 **Moderný JavaScript pre React, Angular, Vue, Node (ES2015+)**
-:: https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015
+:: **https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015**
 
-_V kurze budem miestami používať JS nástroje ako_ **_npm, webpack, atď_**.
-_Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz._
+
+
+*V kurze budem miestami používať JS nástroje ako* ***npm, webpack, atď***.
+*Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz.*
 
 **JavaScript a ES6**
-:: https://www.learn2code.sk/kurzy/online-kurz-javascript-es6
+:: **https://www.learn2code.sk/kurzy/online-kurz-javascript-es6
+**
 
 Tento v sebe obsahuje aj celý ten "Moderný JavaScript" kurz. Je to monštrum. Spapal ho.
+
+
 
 S týmto som sa vo videu hral.
 
 **myjson**
 
-:: [http://myjson.com
-](http://myjson.com/):: https://api.myjson.com/bins/zg7ze
+:: [http://myjson.com](http://myjson.com/)
 
-### 06 Class komponent, JSX, stav/state cez setState
+:: https://api.myjson.com/bins/zg7ze
+
+
+
+### 06 react | Class komponent, JSX, stav/state cez setState
 
 **react
 **:: [https://reactjs.org](https://reactjs.org/)
@@ -193,7 +202,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 2. atribúty sú **camelCase** (onClick, tabIndex, ...)
 3. tagy musíš uzavrieť (`<br />`namiesto `<br>`, `<img />` namiesto `<img>`)
 
-### 07 Robota s FORM-om, iterácia cez POLE
+### 07 react | Robota s FORM-om, iterácia cez POLE
 
 zachyť **zmenu** v inpute
 
@@ -220,7 +229,7 @@ const dudes = this.state.characters.map(dude => <li key={dude.id}>{dude.who}</li
 <ul>{dudes}</ul>
 ```
 
-### 08 Zobraz IF platí, odošli FORM a spracuj dáta
+### 08 react | Zobraz IF platí, odošli FORM a spracuj dáta
 
 zobraz element **AK platí podmienka**
 
@@ -250,7 +259,7 @@ _vytvor nové pole,_ [_rozlož doň_](https://developer.mozilla.org/en-US/docs/W
 :: https://leanpub.com/understandinges6/read#leanpub-auto-the-spread-operator
 :: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
-### 09 setState objekt VS. setState function
+### 09 react | setState objekt VS. setState function
 
 v [snippetoch](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) máš 2 skratky **sst** a **ssf**
 
@@ -283,7 +292,7 @@ v **state** objekte je teraz správny, aktuálny stav komponentu
 **setState objekt vs funkcia**
 :: https://reactjs.org/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous
 
-### 10 Nová JSX šablóna, odoslanie ENTERom
+### 10 react | Nová JSX šablóna, odoslanie ENTERom
 
 nájdi **max ID v poli**
 
@@ -313,7 +322,7 @@ pridávam **classy podľa stavu**
 >
 ```
 
-### 11 UPDATE cool, REMOVE dude
+### 11 react | UPDATE cool, REMOVE dude
 
 ak chceš do metódy preposlať **aj vlastné dáta aj event objekt**
 
@@ -366,7 +375,7 @@ this.setState(state => {
 :: https://stackoverflow.com/questions/29810914/react-js-onclick-cant-pass-value-to-method
 :: https://upmostly.com/tutorials/react-onclick-event-handling-with-examples
 
-### 12 REF na DOM element, VIRTUAL DOM, JSON, LIFECYCLE metódy
+### 12 react | REF na DOM element, VIRTUAL DOM, JSON, LIFECYCLE metódy
 
 **feč feč feč**
 
@@ -389,7 +398,7 @@ fetch('https://api.myjson.com/bins/zg7ze')
 :: https://youtu.be/AdNJ3fydeao
 :: https://youtu.be/BzX4aTRPzno
 
-### 13 CREATE-REACT-APP, react SERVER, ANIMÁCIE
+### 13 react | CREATE-REACT-APP, react SERVER, ANIMÁCIE
 
 **create-react-app**
 :: [https://create-react-app.dev](https://create-react-app.dev/)
@@ -414,13 +423,51 @@ yarn start (alebo npm run start)
 :: https://medium.com/@joethedave/achieving-ui-animations-with-react-the-right-way-562fa8a91935
 :: https://www.tutorialspoint.com/reactjs/reactjs_animations.htm
 
-### 14 TypeScript (je JavaScript, len viac)
+### 15 TypeScript (je JavaScript, len viac)
 
 **TypeScript**
 :: https://devhints.io/typescript
 :: [https://www.typescriptlang.org](https://www.typescriptlang.org/)
 
-### 15 KOMPONENTY, čo je komponent a prečo a taktiež ako a ešte raz prečo
+### 16 angular | vs Angularjs, CLI inštalácia, súbory adresáre
+
+### 17 angular | CYKLUS, odoslanie FORMU, prvé TypeScript typy
+
+### 18 angular | viditeľnosť a CSS classy podľa podmienky + redizajn
+
+### 19 angular | PRIDAJ dúda, VYMAŽ dúda
+
+### 20 angular | [(ngModel)], @dekorátory, REFerencia na DOM elementy
+
+### 21 angular | JSON, Services, TS Interface, vlastné dátové typy
+
+### 22 angular | ANIMÁCIE, rozdiel COMPONENT vs MODULE
+
+### 23 Ktorý mám najradšej a prečo je to SVELTE? Ktorý je naj?
+
+**Veľmo pjekný dokumentárny filmík o Vue.js, radosť pozerať:**
+
+<iframe src="https://www.youtube.com/embed/OrxmtDw4pVI" allowfullscreen="" width="500" height="281" frameborder="0" style="box-sizing: border-box; border: none;"></iframe>
+
+**SVELTE**
+:: [https://svelte.dev](https://svelte.dev/)
+
+
+
+**RETHINKING REACTIVITY**
+:: https://youtu.be/AdNJ3fydeao
+:: https://youtu.be/BzX4aTRPzno
+:: https://news.ycombinator.com/item?id=21376557
+
+
+
+**VUE vs REACT vs ANGULAR trends**
+:: https://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue
+:: https://zendev.com/2018/06/19/react-usage-beating-vue-angular.html
+
+
+
+### 24 KOMPONENTY, čo je komponent a prečo a taktiež ako a ešte raz prečo
 
 Ak ti v HTML jazyku niečo chýba, môžeš si to doprogramovať.
 Cez **komponenty**.
@@ -428,16 +475,20 @@ Cez **komponenty**.
 napríklad takýto **color picker**
 :: https://casesandberg.github.io/react-color
 
+
+
 **pre inšpiráciu**
 :: [https://www.kiwi.com](https://www.kiwi.com/)
 :: https://bulma.io/documentation/components
+
+
 
 **react štruktúra súborov**
 :: https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
 :: https://medium.com/hackernoon/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed
 :: https://marmelab.com/blog/2015/12/17/react-directory-structure.html
 
-### 16 Druhá appka s iTunes cez KOMPONENTY a v TypeScripte
+### 25 Druhá appka s iTunes cez KOMPONENTY a v TypeScripte
 
 spravíme druhá appku
 budeme si púštať itunes pesničky
@@ -460,7 +511,31 @@ a ty si...
 
 alebo nie, je to na tebe.
 
-### 17 CREATE-REACT-APP s TypeScriptom, iTunes appka
+### 26 vue | Vue CLI, inštalácia cez terminál
+
+### 27 vue | ukážková mini appka, ŠTRUKTÚRA SÚBOROV
+
+### 28 vue | prvý KOMPONENT, SCOPED styles, ROUTER
+
+### 29 vue | Tunes podstránka, SUB-KOMPONENTY
+
+### 30 vue | KOMUNIKÁCIA KOMPONENTOV - od rodiča k decku cez PROPS
+
+### 31 vue | KOMUNIKÁCIA - od decka k tatkovi cez $EMIT EVENT
+
+### 32 vue | KOMUNIKÁCIA - odvšadiaľ všade cez EVENT BUS, VUEX
+
+### 33 vue | @types, LODASH, axios, ITUNES API, tsconfig
+
+### 34 vue | type ANY je cheat, OBJECT DESTRUCTURING, filter, map
+
+### 35 vue | INTERFACE, vlastné dátový typy v TypeScripte
+
+### 36 vue | VUE FILTERS, <tunes-song> komponent
+
+### 37 vue | ANIMÁCIE a emocionálny kolaps
+
+### 38 react | CREATE-REACT-APP s TypeScriptom, iTunes appka
 
 **create react app**
 :: [https://create-react-app.dev](https://create-react-app.dev/)
@@ -481,7 +556,7 @@ yarn serve
 yarn add node-sass
 ```
 
-### 18 Chill video, prejdem SÚBORY APPKY, vyrobím pár KOMPONENTOV
+### 39 react | chill video, prejdem SÚBORY APPKY, vyrobím pár KOMPONENTOV
 
 **wheeeeee**
 :: [https://keyboard.cool](https://keyboard.cool/)
@@ -500,7 +575,7 @@ a ešte
 :: [https://medium.com/hackernoon/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thi...](https://medium.com/hackernoon/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
 :: [https://marmelab.com/blog/2015/12/17/react-directory-structure.html](https://marmelab.com/blog/2015/12/17/react-directory-structure.html)
 
-### 19 React ROUTER
+### 40 react | React ROUTER
 
 **REACT ROUTER**
 
@@ -517,7 +592,7 @@ yarn add --dev @types/react-router-dom
 **HASH ROUTER vs BROWSER ROUTER**
 :: [https://stackoverflow.com/questions/51974369/hashrouter-vs-browserrouter](https://stackoverflow.com/questions/51974369/hashrouter-vs-browserrouter)
 
-### 20 Tvoje prvé (lol, lož) FUNCTION KOMPONENTY, podstránky
+### 41 react | Tvoje prvé (lol, lož) FUNCTION KOMPONENTY, podstránky
 
 ```
 > command palette
@@ -531,7 +606,7 @@ ja na typescript komponenty používam snippet
 tsrafce
 ```
 
-### 21 INLINE styles, css-in-js, STYLED COMPONENTS, CSS MODULES
+### 42 react | INLINE styles, css-in-js, STYLED COMPONENTS, CSS MODULES
 
 **CSS IN REACT**
 :: [https://styled-components.com/docs/basics#motivation](https://styled-components.com/docs/basics#motivation)
@@ -544,7 +619,7 @@ tsrafce
 **STYLED COMPONENTS**
 :: [https://www.iamtimsmith.com/blog/how-to-use-styles-in-a-react-js-application](https://www.iamtimsmith.com/blog/how-to-use-styles-in-a-react-js-application)
 
-### 22 REUSABLE CSS rady, JSX opakovačky, podstránky
+### 43 react | REUSABLE CSS rady, JSX opakovačky, podstránky
 
 **pozri si**
 :: [https://youtu.be/9YUsiwRlz2s](https://youtu.be/9YUsiwRlz2s)
@@ -558,7 +633,7 @@ tsrafce
 **a ešte aj**
 :: [https://youtu.be/3IG0Y63LkDM](https://youtu.be/3IG0Y63LkDM)
 
-### 23 HOOKS API, useState, useEffect, VEDĽAJŠIE EFEKTY
+### 44 react | HOOKS API, useState, useEffect, VEDĽAJŠIE EFEKTY
 
 **useEffect chceš napríklad keď:**
 
@@ -605,7 +680,7 @@ Pravidlá
 **TYPESCRIPT + HOOKS**
 :: [https://www.carlrippon.com/typed-usestate-with-typescript](https://www.carlrippon.com/typed-usestate-with-typescript)
 
-### 24 Tunes podstránka v TS s HOOKS a cyklom a formom
+### 45 react | Tunes podstránka v TS s HOOKS a cyklom a formom
 
 prebehneme cez pole songov
 
@@ -632,7 +707,7 @@ setSongs([...songs, newSong]);
 :: [https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c](https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c)
 :: [https://stackoverflow.com/questions/42081549/typescript-react-event-types](https://stackoverflow.com/questions/42081549/typescript-react-event-types)
 
-### 25 RODIČ a jeho DETI, sub-komponenty
+### 46 react | RODIČ a jeho DETI, sub-komponenty
 
 navyrábaš nové súbory
 
@@ -661,7 +736,7 @@ používaš
 </article>
 ```
 
-### 26 KOMUNIKÁCIA komponentov, TOP-DOWN DATA FLOW (teória)
+### 47 react | KOMUNIKÁCIA komponentov, TOP-DOWN DATA FLOW (teória)
 
 **TOP-DOWN DATA FLOW**
 :: [https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down](https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down)
@@ -682,7 +757,7 @@ Keď oba **SKOMBINUJEŠ**, vieš dosiahnuť komunikáciu medzi súrodencami.
 :: [https://medium.com/better-programming/angular-vs-react-component-communication-91af1a144295](https://medium.com/better-programming/angular-vs-react-component-communication-91af1a144295)
 :: [https://passionfordev.com/react-communication-between-parent-and-child](https://passionfordev.com/react-communication-between-parent-and-child/)
 
-### 27 KOMUNIKÁCIA cez PROPS od rodiča k decku
+### 48 react | KOMUNIKÁCIA cez PROPS od rodiča k decku
 
 v **rodičovi**
 
@@ -709,7 +784,7 @@ React.FC<Props> = (props) => {
 :: [https://reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
 :: [https://lucybain.com/blog/2016/react-state-vs-pros](https://lucybain.com/blog/2016/react-state-vs-pros)
 
-### 28 KOMUNIKÁCIA cez CALLBACK FUNC od decka k rodičovi
+### 49 react | KOMUNIKÁCIA cez CALLBACK FUNC od decka k rodičovi
 
 v **rodičovi** pridáš metódu
 
@@ -747,7 +822,7 @@ takto "poprosíš" rodiča, aby niečo spravil s dátami
 **Identify Where Your State Should Live**
 :: [https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live)
 
-### 29 SINGLE SOURCE OF TRUTH, vytiahni stav do rodiča
+### 50 react | SINGLE SOURCE OF TRUTH, vytiahni stav do rodiča
 
 Ak viac komponentov používa rovnaké dáta, **nájdi ich najbližšieho spoločného rodiča a presuň dáta doň**. Stav žije v spoločnom rodičovi, nie je roztrúsený všelikde po komponentoch.
 
@@ -762,7 +837,7 @@ Zjednoduší ti to rozmýšľanie nad komponentami a nebudeš mať nutkanie pou�
 **TOP-DOWN DATA FLOW**
 :: [https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down](https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down)
 
-### 30 REDUX (nie)
+### 51 react | REDUX (nie)
 
 **Redux je knižnica na manažovanie stavu.**
 Namiesto toho, aby stal bol roztrúsený po komponentoch, bude všetok v tzv. **STORE**. Teória dobrá, v praxi skôr lepšie pre veľké projekty. Rozhodne nie pre všetky, rozhodne nie, keď sa ešte len učíš. Pretože kód je komplikovaný.
@@ -777,7 +852,7 @@ Namiesto toho, aby stal bol roztrúsený po komponentoch, bude všetok v tzv. **
 **WHEN TO USE A STORE AND WHY?**
 :: [https://blog.angular-university.io/angular-2-redux-ngrx-rxjs](https://blog.angular-university.io/angular-2-redux-ngrx-rxjs)
 
-### 31 TS INTERFACE, vlastné dátové typy v TS + jeho história
+### 52 react | INTERFACE, vlastné dátové typy v TS + jeho história
 
 **V TypeScripte si môžeš doprogramovať vlastné dátové typy.**
 Ak máš objekty pre usera, môžeš objektu presne definovať jeho tvar.
@@ -804,7 +879,7 @@ Môžeš si spraviť súbor týchto typov. Naimportovať všade, kde ich chceš 
 import { Song } from '../../types'
 ```
 
-### 32 useRef odkaz na DOM elementy, OPTIONAL CHAINING, refaktoring
+### 53 react | useRef odkaz na DOM elementy, OPTIONAL CHAINING, refaktoring
 
 V tomto videu sa toho deje hrozne veľa. Prepáč.
 Potreboval som spraviť **refactoring**, trochu zjednodušiť kód. A keď prepisujem kopu súborov vo videu rýchlo za sebou, tažko sa to sleduje. Je to rýchle jak hokejista na bobovej dráhe.
@@ -836,7 +911,7 @@ Chyba je v mojom videu.
 :: [https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element](https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element)
 :: [https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput](https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput)
 
-### 33 LODASH, @types, iTunes api, AXIOS
+### 54 react | LODASH, @types, iTunes api, AXIOS
 
 **Package napísane v JavaScripte nemajú typové definície.**
 Ak ich chceš pridať, stačí doinštalovať **@types package**, ktorý pravdepodobne existuje. Inštaluj ho ako **dev dependency**, lebo je len pre teba, počas kódenia. Nepatrí do výsledného bundle pre prehliadač.
@@ -872,7 +947,7 @@ yarn add --dev @types/lodash-es
 :: [https://pokeapi.com](https://pokeapi.com/)
 :: [https://api.abalin.net](https://api.abalin.net/)
 
-### 34 Extract data, Samotvorba Interfacu, OBJECT DESTRUCTURING, typ Song
+### 55 react | extract data, Samotvorba Interfacu, OBJECT DESTRUCTURING, typ Song
 
 **Paste JSON as Code**
 :: [https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
@@ -910,12 +985,12 @@ potom do nej pošleš objekt **extractData(obj)** a vráti sa ti nový objekt, v
 **types in object destructuring?**
 :: [https://stackoverflow.com/questions/39672807/types-in-object-destructuring](https://stackoverflow.com/questions/39672807/types-in-object-destructuring) (aj keď vždy byť skeptický k stackoverflow)
 
-### 35 FORMÁTOVANIE výpisov, `<TunesSong>` komponent
+### 56 react | FORMÁTOVANIE výpisov, `<TunesSong>` komponent
 
 **Chumbawamba**
 :: [https://en.wikipedia.org/wiki/The_Boy_Bands_Have_Won](https://en.wikipedia.org/wiki/The_Boy_Bands_Have_Won)
 
-### 36 useEffect a useMemo hooks
+### 57 react | useEffect a useMemo hooks
 
 **USE MEMO**
 
@@ -931,7 +1006,7 @@ Zavolá funkciu len ak sa zmení hodnota v argumente
 **FETCH DATA WITH REACT HOOKS**
 :: [https://www.robinwieruch.de/react-hooks-fetch-data](https://www.robinwieruch.de/react-hooks-fetch-data)
 
-### 37 KONIEC reactu, ANIMÁCIE, Vue vs React rekap
+### 58 react | KONIEC reactu, ANIMÁCIE, Vue vs React rekapitulácia
 
 **pozri si**
 :: [https://youtu.be/FtgUSUHnzLI](https://youtu.be/FtgUSUHnzLI)
