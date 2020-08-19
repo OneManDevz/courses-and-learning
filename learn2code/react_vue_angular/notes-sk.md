@@ -513,6 +513,35 @@ alebo nie, je to na tebe.
 
 ### 26 vue | Vue CLI, inštalácia cez terminál
 
+**nainštaluj VUE konzolu**, VUE CLI
+:: [https://cli.vuejs.org](https://cli.vuejs.org/)
+
+a ideš na to 
+
+```
+vue create adresar-tvojej-appky
+cd adresar-tvojej-appky
+yarn serve (alebo npm run serve)
+```
+
+navyberaj si, čo potrebuješ... u mňa to bolo
+
+```
+Babel, Router, CSS Pre-processors, Linter, Typescript
+```
+
+ty si nastav ako ty chceš, ja som si dal
+
+```
+class style NIE, babel + typescript ANO, history mode ANO
+dart-sass, ESLint + Prettier, Lint on Save, Dedicated config files
+```
+
+**vue package a rozšírenia**
+
+:: https://github.com/vuejs
+:: https://github.com/vuejs/awesome-vue
+
 ### 27 vue | ukážková mini appka, ŠTRUKTÚRA SÚBOROV
 
 ### 28 vue | prvý KOMPONENT, SCOPED styles, ROUTER
