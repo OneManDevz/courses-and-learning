@@ -558,6 +558,30 @@ a ešte
 
 ### 28 vue | prvý KOMPONENT, SCOPED styles, ROUTER
 
+ak sa chceš prepínať stránkami bez refreshu
+namiesto `<a href>` použi `<router-link>`
+
+```html
+<div class="navigation">
+    <router-link to="/">Home</router-link>
+    <router-link to="/tunes">Tunes</router-link>
+    <router-link to="/about">About</router-link>
+</div>
+```
+
+toto css bude lokálne **scoped,** len pre komponent
+
+```html
+<style lang="scss" scoped>
+```
+
+CSS môžeš písať priamo do komponentu, alebo sa odkazovať na súbor 
+
+```html
+<style lang="scss"></style>
+<style src="@/assets/scss/main.scss" lang="scss"></style>
+```
+
 ### 29 vue | Tunes podstránka, SUB-KOMPONENTY
 
 ### 30 vue | KOMUNIKÁCIA KOMPONENTOV - od rodiča k decku cez PROPS

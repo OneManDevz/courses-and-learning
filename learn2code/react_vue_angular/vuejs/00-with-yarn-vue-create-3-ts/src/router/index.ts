@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
+import Tunes from '../views/Tunes.vue'
 
 const routes: Array<RouteRecordRaw> = [
 	{
 		path: '/',
 		name: 'Home',
+		// Code of this page is loaded the moment page loads
 		component: Home
+	},
+	{
+		path: '/tunes',
+		name: 'tunes',
+		component: Tunes
 	},
 	{
 		path: '/about',
