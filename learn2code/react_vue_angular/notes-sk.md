@@ -584,6 +584,36 @@ CSS môžeš písať priamo do komponentu, alebo sa odkazovať na súbor
 
 ### 29 vue | Tunes podstránka, SUB-KOMPONENTY
 
+**sub-komponenty** (ak rodičovský komponent má v sebe deti, do rodiča vlož:)
+
+```
+import TheNavigation from '@/components/TheNavigation.vue' 
+  
+components: {
+    TheNavigation
+}
+```
+
+potom veselo (alebo smutne [alebo tak medzi]) používaj **nový HTML element**
+
+```
+<header>
+    <the-navigation />
+</header>
+```
+
+**zabráň refreshu** po submite
+
+```
+<form @submit.prevent="getMusic()">
+```
+
+nájdi **max idčko**
+
+```
+Math.max(...songs.map(s => s.id)) + 1
+```
+
 ### 30 vue | KOMUNIKÁCIA KOMPONENTOV - od rodiča k decku cez PROPS
 
 ### 31 vue | KOMUNIKÁCIA - od decka k tatkovi cez $EMIT EVENT
