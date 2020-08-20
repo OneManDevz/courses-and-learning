@@ -39,8 +39,6 @@ Mám JavaScript kurzy, ak by si to potreboval:)
 **MALÝ KURZ MODERNÝCH JS ZÁPISOV**
 :: https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015
 
-
-
 Tieto veci si stiahni a nainštaluj.
 
 **VUE (Vetur a VSCode Snippets)**
@@ -55,8 +53,6 @@ Tieto veci si stiahni a nainštaluj.
 :: https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
 :: https://www.vuemastery.com/vue-cheat-sheet/
 
-
-
 **REACT (ES7 React/Redux/GraphQL/React-Native snippets)**
 
 :: https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
@@ -69,8 +65,6 @@ Tieto veci si stiahni a nainštaluj.
 :: https://devhints.io/react
 :: https://jsmanifest.com/react-cheatsheet/
 
-
-
 **ANGULAR (Angular Snippets)**
 :: https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2
 
@@ -81,74 +75,59 @@ Tieto veci si stiahni a nainštaluj.
 :: https://angular.io/guide/cheatsheet
 :: https://devhints.io/typescript
 
-
-
 ### 03 Reaktívne appky | najprv vo VUE
 
 Ideme na to. Zhurta. Na čo čakať. Na nič.
-V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu. 
+V prvých troch videách zbúcham maličkú stránku, ktorú rozhýbem cez Vue.js. Ak poznáš čistý JS alebo jQuery, uvidíš tú mágiu.
 
 **Všetky veci, ktoré ukážem, potom v kurze postupne vysvetlím.
 **Všetok kód, čo napíšem, si môžeš stiahnuť v sekcii "**Materiály**".
 
 Sťahuj si ho. A hraj sa s ním. Upravuj môj kód. Meň ho, rob z neho vlastnú stránku. Uč sa podľa videí, ale pokojne kopíruj kusy z môjho kódu. Vylepšuj ho. Hraj sa. Zabávaj sa. Makaj.
 
-
 **Vue.js**
 :: [https://vuejs.org](https://vuejs.org/)
 :: [https://vuejs.org/guide](https://vuejs.org/guide/)
-**Vue štartér** 
+**Vue štartér**
 
 ```
 const app = new Vue({
     el: '#app',
     data: {
-      
+
     }
 })
 ```
-
-
 
 ### 04 PODMIENKY a CYKLY v HTML, SYNCHRONIZÁCIA stavu s UI | vue
 
 **Reaktívne frameworky** (Vue, React, Angular)
 
-zo statického HTML kódu spravia živú šablónu. HTML kódu pridáš pravidláva vždy keď príde zmena, automaticky na ňu **zareaguje**. 
+zo statického HTML kódu spravia živú šablónu. HTML kódu pridáš pravidláva vždy keď príde zmena, automaticky na ňu **zareaguje**.
 
-Nemusíšvfurt selectovať elementy zo stránky, prependovať, appendovať, vyrábať nové prázdne, naťahovať sa s classListom... ty napíšeš HTML kód. A povieš mu *"buď tu iba ak platí toto"* a Vue sa postará o zvyšok. 
+Nemusíšvfurt selectovať elementy zo stránky, prependovať, appendovať, vyrábať nové prázdne, naťahovať sa s classListom... ty napíšeš HTML kód. A povieš mu _"buď tu iba ak platí toto"_ a Vue sa postará o zvyšok.
 
 Môžemvtu vypisovať, kým sa mi prsty neodlomia a neodkráčajú v proteste do západu slnka, ale veď pozri video. Vieš jak sa hovorí - lepšie raz youtube, ako tisíckrát čítať. Aj keď toto neni youtube. (Je to vimeo.)
-
-
 
 ### 05 JSON zo servera, ANIMÁCIE | vue
 
 Tu už sa trochu rozšupnem a pridám animácie a AJAX/JSON a iné srandy, ale neboj nič.
 Postupne si všetko prejdeme.
 
-
-
-*V kurze budem písať ES6+ kód.*
-*Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz.*
-
-
+_V kurze budem písať ES6+ kód._
+_Ak ho nepoznáš - alebo poznáš, ale chceš poznať lepšie - mám pre teba kurz._
 
 **Moderný JavaScript pre React, Angular, Vue, Node (ES2015+)**
 :: **https://www.learn2code.sk/kurzy/moderny-javascript-pre-react-angular-vue-node-es2015**
 
-
-
-*V kurze budem miestami používať JS nástroje ako* ***npm, webpack, atď***.
-*Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz.*
+_V kurze budem miestami používať JS nástroje ako_ **_npm, webpack, atď_**.
+_Ak ich nepoznáš - alebo ak s JavaScriptom zatiaľ nie si kamoš najväčší - mám pre teba kurz._
 
 **JavaScript a ES6**
 :: **https://www.learn2code.sk/kurzy/online-kurz-javascript-es6
 **
 
 Tento v sebe obsahuje aj celý ten "Moderný JavaScript" kurz. Je to monštrum. Spapal ho.
-
-
 
 S týmto som sa vo videu hral.
 
@@ -157,8 +136,6 @@ S týmto som sa vo videu hral.
 :: [http://myjson.com](http://myjson.com/)
 
 :: https://api.myjson.com/bins/zg7ze
-
-
 
 ### 06 react | Class komponent, JSX, stav/state cez setState
 
@@ -452,20 +429,14 @@ yarn start (alebo npm run start)
 **SVELTE**
 :: [https://svelte.dev](https://svelte.dev/)
 
-
-
 **RETHINKING REACTIVITY**
 :: https://youtu.be/AdNJ3fydeao
 :: https://youtu.be/BzX4aTRPzno
 :: https://news.ycombinator.com/item?id=21376557
 
-
-
 **VUE vs REACT vs ANGULAR trends**
 :: https://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue
 :: https://zendev.com/2018/06/19/react-usage-beating-vue-angular.html
-
-
 
 ### 24 KOMPONENTY, čo je komponent a prečo a taktiež ako a ešte raz prečo
 
@@ -475,13 +446,9 @@ Cez **komponenty**.
 napríklad takýto **color picker**
 :: https://casesandberg.github.io/react-color
 
-
-
 **pre inšpiráciu**
 :: [https://www.kiwi.com](https://www.kiwi.com/)
 :: https://bulma.io/documentation/components
-
-
 
 **react štruktúra súborov**
 :: https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
@@ -516,7 +483,7 @@ alebo nie, je to na tebe.
 **nainštaluj VUE konzolu**, VUE CLI
 :: [https://cli.vuejs.org](https://cli.vuejs.org/)
 
-a ideš na to 
+a ideš na to
 
 ```
 vue create adresar-tvojej-appky
@@ -563,9 +530,9 @@ namiesto `<a href>` použi `<router-link>`
 
 ```html
 <div class="navigation">
-    <router-link to="/">Home</router-link>
-    <router-link to="/tunes">Tunes</router-link>
-    <router-link to="/about">About</router-link>
+  <router-link to="/">Home</router-link>
+  <router-link to="/tunes">Tunes</router-link>
+  <router-link to="/about">About</router-link>
 </div>
 ```
 
@@ -575,11 +542,10 @@ toto css bude lokálne **scoped,** len pre komponent
 <style lang="scss" scoped>
 ```
 
-CSS môžeš písať priamo do komponentu, alebo sa odkazovať na súbor 
+CSS môžeš písať priamo do komponentu, alebo sa odkazovať na súbor
 
 ```html
-<style lang="scss"></style>
-<style src="@/assets/scss/main.scss" lang="scss"></style>
+<style lang="scss"></style> <style src="@/assets/scss/main.scss" lang="scss"></style>
 ```
 
 ### 29 vue | Tunes podstránka, SUB-KOMPONENTY
@@ -587,8 +553,8 @@ CSS môžeš písať priamo do komponentu, alebo sa odkazovať na súbor
 **sub-komponenty** (ak rodičovský komponent má v sebe deti, do rodiča vlož:)
 
 ```
-import TheNavigation from '@/components/TheNavigation.vue' 
-  
+import TheNavigation from '@/components/TheNavigation.vue'
+
 components: {
     TheNavigation
 }
@@ -616,7 +582,13 @@ Math.max(...songs.map(s => s.id)) + 1
 
 ### 30 vue | KOMUNIKÁCIA KOMPONENTOV - od rodiča k decku cez PROPS
 
-### 31 vue | KOMUNIKÁCIA - od decka k tatkovi cez $EMIT EVENT
+**komunikácia komponentov vo vue**, svätý graf
+:: https://laracasts.com/discuss/channels/vue/interaction-between-parent-and-child-components?page=1
+
+![img](https://vuejs.org/images/props-events.png)
+od rodiča dole cez props, z decka hore cez \$emit event
+
+### 31 vue | KOMUNIKÁCIA - od decka k tatkovi cez \$EMIT EVENT
 
 ### 32 vue | KOMUNIKÁCIA - odvšadiaľ všade cez EVENT BUS, VUEX
 
@@ -1048,7 +1020,7 @@ yarn add --dev @types/lodash-es
 :: [https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 :: [https://blog.quicktype.io/quicktype-extensions](https://blog.quicktype.io/quicktype-extensions/)
 
-Z networku vytiahni response (json). 
+Z networku vytiahni response (json).
 
 ![00-network-tab](https://user-images.githubusercontent.com/42937562/87232654-f896f000-c3c0-11ea-8dd1-ebbdd594ea72.png)
 
@@ -1114,8 +1086,3 @@ Zavolá funkciu len ak sa zmení hodnota v argumente
 
 **ale aj**
 :: [https://youtu.be/Fz5s2_VDyOQ](https://youtu.be/Fz5s2_VDyOQ)
-
-
-
-
-
