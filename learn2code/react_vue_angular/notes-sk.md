@@ -611,13 +611,28 @@ ešte raz, pretože 7-Eleven never forget
 
 ### 32 vue | KOMUNIKÁCIA - odvšadiaľ všade cez EVENT BUS, VUEX
 
+tento event bus ber skôr ako špecialitku pre špeciálne situácie
+
+**!! POZOR POZOR POZOR !!**
+
+prikazujem ti pozrieť si videá **z react sekcie kurzu** kde hovorím o **TOP-DOWN DATA FLOW** a **SINGLE SOURCE OF TRUTH**. Veci, ktoré ukazujem tam, môžeš použiť aj vo vue
+naučia ťa rozmýšľať nad tým, čo všetko má byť v stave a kde stav vôbec má byť
+
+**vuex**
+:: [https://vuex.vuejs.org](https://vuex.vuejs.org/)
+
+aby si vuex náhodou potreboval a chcel byt si vidieť pár videí o tom, ako sa používa, mám niekoľko v mojom veľkom Vue.js kurze
+
+**Vue.js + single page aplikácie**
+:: https://www.learn2code.sk/kurzy/vue-js-single-page-aplikacie
+
 ### 33 vue | @types, LODASH, axios, ITUNES API, tsconfig
 
 ### 34 vue | type ANY je cheat, OBJECT DESTRUCTURING, filter, map
 
 ### 35 vue | INTERFACE, vlastné dátový typy v TypeScripte
 
-### 36 vue | VUE FILTERS, <tunes-song> komponent
+### 36 vue | VUE FILTERS, `<tunes-song>` komponent
 
 ### 37 vue | ANIMÁCIE a emocionálny kolaps
 

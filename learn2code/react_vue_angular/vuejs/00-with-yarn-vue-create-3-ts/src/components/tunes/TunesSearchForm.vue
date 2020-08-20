@@ -5,9 +5,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import Vue from 'vue'
 
-export default defineComponent({
+export default Vue.extend({
 	data() {
 		return {
 			query: '' as string
@@ -15,7 +15,7 @@ export default defineComponent({
 	},
 	methods: {
 		getMusic(): void {
-			this.$emit('get-songs', this.query)
+			this.$root.$emit('get-songs', this.query)
 		}
 	}
 })

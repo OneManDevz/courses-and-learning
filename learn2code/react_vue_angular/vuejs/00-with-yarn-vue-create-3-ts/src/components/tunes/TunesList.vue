@@ -4,13 +4,12 @@
 			{{ song }}
 		</li>
 	</ul>
-	<p v-if="searchedSong">Looking for song: {{ searchedSong }}</p>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import Vue from 'vue'
 
-export default defineComponent({
+export default Vue.extend({
 	props: {
 		searchedSong: {
 			type: String,
@@ -25,6 +24,15 @@ export default defineComponent({
 				{ id: 3, artist: 'Breeee', name: 'Kekeeee' }
 			]
 		}
+	},
+	mounted() {
+		this.$root.$on('get-songs', (song: string) => {
+			this.songs.push({
+				id: Math.max(...this.songs.map(s => s.id)) + 1,
+				artist: song,
+				name: song
+			})
+		})
 	}
 })
 </script>

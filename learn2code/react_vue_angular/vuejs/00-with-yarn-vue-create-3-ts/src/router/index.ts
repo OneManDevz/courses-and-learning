@@ -1,11 +1,17 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+// views
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
 import Tunes from '../views/Tunes.vue'
 
-const routes: Array<RouteRecordRaw> = [
+Vue.use(VueRouter)
+
+const routes = [
 	{
 		path: '/',
-		name: 'Home',
+		name: 'home',
 		// Code of this page is loaded the moment page loads
 		component: Home
 	},
@@ -16,7 +22,7 @@ const routes: Array<RouteRecordRaw> = [
 	},
 	{
 		path: '/about',
-		name: 'About',
+		name: 'about',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
@@ -24,8 +30,9 @@ const routes: Array<RouteRecordRaw> = [
 	}
 ]
 
-const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+	mode: 'history',
+	base: process.env.BASE_URL,
 	routes
 })
 
