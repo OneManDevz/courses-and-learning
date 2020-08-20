@@ -544,6 +544,18 @@ dart-sass, ESLint + Prettier, Lint on Save, Dedicated config files
 
 ### 27 vue | ukážková mini appka, ŠTRUKTÚRA SÚBOROV
 
+**wheeeeee**
+:: [https://keyboard.cool](https://keyboard.cool/)
+
+pozri si
+:: https://youtu.be/jOBRLH9O2i4
+
+a daj si
+:: https://youtu.be/l5JMw5SWLJE
+
+a ešte
+:: https://youtu.be/msPCQgRPPjI
+
 ### 28 vue | prvý KOMPONENT, SCOPED styles, ROUTER
 
 ### 29 vue | Tunes podstránka, SUB-KOMPONENTY
