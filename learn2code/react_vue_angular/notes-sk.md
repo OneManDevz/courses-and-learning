@@ -590,6 +590,25 @@ od rodiča dole cez props, z decka hore cez \$emit event
 
 ### 31 vue | KOMUNIKÁCIA - od decka k tatkovi cez \$EMIT EVENT
 
+**z decka** hore k rodičovi **odpaľuješ udalosti**
+*vymyslíš si vlastný event, dáš mu vlastný názov, odpáliš ho*
+
+```
+this.$emit('new-songs-have-arrived', data)
+```
+
+na rodičovi zareaguješ
+
+```
+<tunes-search-form @new-songs-have-arrived="$event" />
+```
+
+priložené dáta nájdeš v špeciálnej premennej **$event**, ktorý vue vytvorilo
+
+ešte raz, pretože 7-Eleven never forget
+
+![img](https://vuejs.org/images/props-events.png)
+
 ### 32 vue | KOMUNIKÁCIA - odvšadiaľ všade cez EVENT BUS, VUEX
 
 ### 33 vue | @types, LODASH, axios, ITUNES API, tsconfig

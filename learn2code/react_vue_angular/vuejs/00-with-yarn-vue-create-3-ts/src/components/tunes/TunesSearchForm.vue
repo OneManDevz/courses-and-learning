@@ -15,11 +15,7 @@ export default defineComponent({
 	},
 	methods: {
 		getMusic(): void {
-			// this.songs.push({
-			// 	id: Math.max(...this.songs.map(s => s.id)) + 1,
-			// 	artist: this.query,
-			// 	name: this.query
-			// })
+			this.$emit('get-songs', this.query)
 		}
 	}
 })

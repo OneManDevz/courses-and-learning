@@ -4,12 +4,19 @@
 			{{ song }}
 		</li>
 	</ul>
+	<p v-if="searchedSong">Looking for song: {{ searchedSong }}</p>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+	props: {
+		searchedSong: {
+			type: String,
+			default: ''
+		}
+	},
 	data() {
 		return {
 			songs: [
