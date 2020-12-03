@@ -7,14 +7,12 @@ const expandedLines = lines.map((line) => {
 });
 
 let count = 0;
-let positions = [];
 let x = 0;
 let y = 0;
 
 for (let i = 0; i < expandedLines.length - 1; i++) {
   x += 3;
   y += 1;
-  positions.push([{ x: x, y: y, char: expandedLines[y][x] }]);
 
   if (expandedLines[y][x] == '#') count++;
 }
