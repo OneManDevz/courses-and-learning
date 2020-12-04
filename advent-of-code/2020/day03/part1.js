@@ -1,6 +1,4 @@
-let fs = require('fs')
-let data = fs.readFileSync('puzzle-input.txt', 'utf-8')
-let lines = data.split(/\r?\n/)
+let lines = require('fs').readFileSync('puzzle-input.txt', 'utf-8').split(/\r?\n/)
 
 const expandedLines = lines.map((line) => line.repeat(Math.round((lines.length / line.length) * 10)))
 
