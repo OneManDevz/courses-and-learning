@@ -10,6 +10,10 @@ while (data[pointer] !== 99) {
 	} else if (data[pointer] == 2) {
 		data[data[pointer + 3]] = data[data[pointer + 1]] * data[data[pointer + 2]]
 	}
+
+	if (data[data[pointer + 3]] == 19690720) {
+		console.log('Daco')
+	}
 	pointer += 4
 }
 
