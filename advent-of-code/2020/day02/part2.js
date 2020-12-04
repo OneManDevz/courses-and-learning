@@ -1,5 +1,6 @@
 let correctCount = 0
-let fs = require('fs')
+
+require('fs')
 	.readFileSync('puzzle-input.txt', 'utf-8')
 	.split(/\r?\n/)
 	.forEach((line) => {

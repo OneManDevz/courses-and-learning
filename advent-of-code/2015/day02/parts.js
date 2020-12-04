@@ -1,8 +1,7 @@
-const fs = require('fs')
 let amount = 0
 let ribbon = 0
 
-const lines = fs
+require('fs')
 	.readFileSync('input.txt', 'utf-8')
 	.split(/\r?\n/)
 	.map((line) =>
