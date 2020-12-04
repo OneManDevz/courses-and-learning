@@ -7,14 +7,9 @@ const expandedLines = lines.map((line) => {
 });
 
 let count = 0;
-let x = 0;
-let y = 0;
 
-for (let i = 0; i < expandedLines.length - 1; i++) {
-  x += 3;
-  y += 1;
-
-  if (expandedLines[y][x] == '#') count++;
+for (let i = 0; i < expandedLines.length; i++) {
+  if (expandedLines[i][i * 3] == '#') count++;
 }
 
 console.log('🚀 ~ file: part1.js ~ line 10 ~ count', count);
