@@ -1,7 +1,4 @@
-const data = require('fs')
-	.readFileSync('input.txt', 'utf-8')
-	.split(',')
-	.map((a) => parseInt(a))
+const data = require('fs').readFileSync('input.txt', 'utf-8').split(',').map(Number)
 
 data[1] = 12
 data[2] = 2
@@ -15,4 +12,5 @@ for (let i = 0; i < data.length; i += 4) {
 		break
 	}
 }
+
 console.log('🚀 ~ file: part1.js ~ line 5 ~ data', data[0])

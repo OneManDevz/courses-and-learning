@@ -7,7 +7,7 @@ require('fs')
 	.map((line) =>
 		line
 			.split('x')
-			.map((number) => parseInt(number))
+			.map(Number)
 			.sort((a, b) => (a > b ? 1 : -1))
 	)
 	.forEach((line) => {
