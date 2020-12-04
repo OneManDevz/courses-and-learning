@@ -2,9 +2,9 @@ let fs = require('fs');
 let data = fs.readFileSync('puzzle-input.txt', 'utf-8');
 let lines = data.split(/\r?\n/);
 
-const expandedLines = lines.map((line) => {
-  return line.repeat(Math.round((lines.length / lines[0].length) * 8));
-});
+const expandedLines = lines.map((line) =>
+  line.repeat(Math.round((lines.length / lines[0].length) * 8))
+);
 
 let counts = [0, 0, 0, 0, 0];
 
