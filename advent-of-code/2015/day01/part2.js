@@ -4,13 +4,13 @@ let floor = 0
 let basement = 0
 
 for (let i = 0; i < data.length; i++) {
-	if (data[i] === ')') floor--
-	if (data[i] === '(') floor++
+  if (data[i] === ')') floor--
+  if (data[i] === '(') floor++
 
-	if (floor == -1) {
-		basement = i + 1
-		break
-	}
+  if (floor == -1) {
+    basement = i + 1
+    break
+  }
 }
 
 console.log(floor, basement)
