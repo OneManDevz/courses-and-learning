@@ -7,6 +7,9 @@ const directions = {
   right: 'R', //degrees
   forward: 'F', // direction ships is facing
 }
+let dirCode = ['E', 'S', 'W', 'N']
+let position = { NS: 0, EW: 0 }
+let current = 'E'
 
 const input = require('fs')
   .readFileSync('input.txt', 'utf-8')
@@ -17,17 +20,11 @@ const input = require('fs')
     return { instruction, value }
   })
 
-let dirCode = ['E', 'S', 'W', 'N']
-let position = [0, 0]
-
-let current = 'E'
-
 function rotate(value) {
   let index = dirCode.indexOf(current)
   let count = value / 90
-
   let next = index + (count % 4)
-  console.log('next', next)
+
   if (next < 0) next = 4 + next
   if (next >= 4) next -= 4
   current = dirCode[next]
@@ -35,32 +32,18 @@ function rotate(value) {
 
 input.forEach((command) => {
   const { instruction, value } = command
-  switch (instruction) {
-    case directions.north:
-      position[1] -= value
-      break
-    case directions.south:
-      position[1] += value
-      break
-    case directions.east:
-      position[0] += value
-      break
-    case directions.west:
-      position[0] -= value
-      break
-    case directions.left:
-      rotate(-value)
-      break
-    case directions.right:
-      rotate(value)
-      break
-    case directions.forward:
-      if (current === directions.north) position[1] -= value
-      if (current === directions.south) position[1] += value
-      if (current === directions.east) position[0] += value
-      if (current === directions.west) position[0] -= value
-      break
+  if (instruction === directions.north) position.NS -= value
+  if (instruction === directions.south) position.NS += value
+  if (instruction === directions.east) position.EW += value
+  if (instruction === directions.west) position.EW -= value
+  if (instruction === directions.left) rotate(-value)
+  if (instruction === directions.right) rotate(value)
+  if (instruction === directions.forward) {
+    if (current === directions.north) position.NS -= value
+    if (current === directions.south) position.NS += value
+    if (current === directions.east) position.EW += value
+    if (current === directions.west) position.EW -= value
   }
 })
 
-console.log(Math.abs(position[0] + position[1]))
+console.log(Math.abs(position.NS + position.EW))
